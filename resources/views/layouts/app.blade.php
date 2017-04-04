@@ -12,10 +12,8 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="/css/style.css">
+    <link href="{{ asset('css/master.css') }}" rel="stylesheet">
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -25,7 +23,7 @@
 </head>
 <body>
     <div id="app">
-        <nav class="navbar navbar-inverse navbar-static-top">
+        <nav class="navbar navbar-inverse">
             <div class="container">
                 <div class="navbar-header">
 

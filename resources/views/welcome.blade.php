@@ -16,9 +16,7 @@
     </head>
     <body>
       <div class="full">
-
-
-        <nav class="navbar navbar-inverse navbar-fixed-top " role="navigation">
+        <nav class="navbar navbar-inverse  " role="navigation">
             <div class="container">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -131,18 +129,15 @@
       <li>twee</li>
       <li>drie</li>
       <li>vier</li>
-
     </div>
     <div class="col-md-6 portfolio-item fo">
       <h1>Volg stad Antwerpen</h1>
-      <li>een</li>
-      <li>twee</li>
-      <li>drie</li>
-      <li>vier</li>
-
+      <li>icon</li>
+      <li>icon</li>
+      <li>icon</li>
+      <li>icon</li>
     </div>
   </div>
-
 </footer>
 
 
