@@ -88,7 +88,7 @@
 
 
 	             <div class="breadcrumb">
-	                <a href="/home">← back to overview</a>
+	                <a href="/Project-Web-Git/public">← Terug naar overzicht</a>
 	            </div>
 
 

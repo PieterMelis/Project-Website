@@ -22,4 +22,13 @@ class ArticlesController extends Controller
          Auth::user()->articles()->save($article);    
         return redirect('home');
     }
+    public function show($id){
+    	//find functunality
+    	return view('show');
+    }
+    public function news(){
+    	//find functunality
+    	return view('news');
+    }
+
 }
