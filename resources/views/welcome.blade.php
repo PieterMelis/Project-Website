@@ -10,7 +10,7 @@
         <!-- Fonts -->
         <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
     </head>
@@ -57,7 +57,7 @@
                   <div class="input-group input-group-lg">
                       <input type="text" class="form-control" />
                     <div class="input-group-btn">
-                      <button type="submit" class="btn">Search</button>
+                      <button type="submit" class="btn btn-default"><span class="	fa fa-search"></span></button>
                     </div>
                   </div>
                 </div>
