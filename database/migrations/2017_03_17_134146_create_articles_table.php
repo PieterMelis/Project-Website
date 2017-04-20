@@ -18,8 +18,8 @@ class CreateArticlesTable extends Migration
             $table->integer('user_id')->unsigned();
             $table->string('title');
             $table->string('excerpt'); //Excerpt is small part of body to show on summary pages
-            $table->string('body');
-            $table->string('type'); //Types are: Testimonial, Video, Text
+            $table->longText('body');
+            $table->string('type')->default('text'); //Types are: Testimonial, Video, Text
 
             //Links still need to be optimized. For now an article can have 2 images (or 1 img 1 video) links
             $table->string('link1');

@@ -86,54 +86,53 @@
         </div>
        <!-- Projects Row -->
        <div class="row">
+         @if (isset($approvedArticles[0]))
            <div class="col-md-6 portfolio-item">
-             <h3>
-                 <h3>News 1</h3>
-             </h3>
-               <a href="#">
+               <a href="article/{{ $approvedArticles[0]->id }}">
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
-               <br>
+               <h3>
+                   <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
+               </h3>
+               <p>{{ $approvedArticles[0]->excerpt}}</p>
            </div>
+         @endif
+         @if (isset($approvedArticles[1]))
            <div class="col-md-6 portfolio-item">
-             <h3>
-                 <h3>News 2</h3>
-             </h3>
-               <a href="#">
+               <a href="article/{{ $approvedArticles[1]->id }}">
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
-               <br>
+               <h3>
+                   <a href="article/{{ $approvedArticles[1]->id }}">{{ $approvedArticles[1]->title}}</a>
+               </h3>
+               <p>{{ $approvedArticles[1]->excerpt}}</p>
            </div>
+          @endif
+       </div>
+
+       <div class="row">
+        @if (isset($approvedArticles[2]))
            <div class="col-md-6 portfolio-item">
-             <h3>
-                 <h3>News 3</h3>
-             </h3>
-               <a href="#">
+               <a href="article/{{ $approvedArticles[2]->id }}">
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
-               <br>
+               <h3>
+                   <a href="article/{{ $approvedArticles[2]->id }}">{{ $approvedArticles[2]->title}}</a>
+               </h3>
+               <p>{{ $approvedArticles[2]->excerpt}}</p>
            </div>
+        @endif
+        @if (isset($approvedArticles[3]))
            <div class="col-md-6 portfolio-item">
-             <h3>
-                 <h3>News 4</h3>
-             </h3>
-               <a href="#">
+               <a href="article/{{ $approvedArticles[3]->id }}">
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
-               <br>
+               <h3>
+                  <a href="article/{{ $approvedArticles[3]->id }}">{{ $approvedArticles[3]->title}}</a>
+               </h3>
+               <p>{{ $approvedArticles[3]->excerpt}}</p>
            </div>
+        @endif
        </div>
 </div>
 <footer class="foos">

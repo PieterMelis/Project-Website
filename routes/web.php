@@ -13,9 +13,7 @@
 Route::get('article/add', 'ArticlesController@create');
 Route::get('article/{id}', 'ArticlesController@show');
 Route::get('news', 'ArticlesController@News');
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', 'ArticlesController@Index');
 
 Auth::routes();
 
