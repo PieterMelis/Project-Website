@@ -60,6 +60,14 @@
                       <button type="submit" class="btn btn-default"><span class="	fa fa-search"></span></button>
                     </div>
                   </div>
+                  <div class="row icon portfolio-item center">
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                  </div>
                 </div>
               </div>
             </form>
@@ -79,47 +87,54 @@
        <!-- Projects Row -->
        <div class="row">
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <h3>News 1</h3>
+             </h3>
                <a href="#">
-                   <img class="img-responsive" src="../img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-               <h3>
-                   <a href="#">News 1</a>
-               </h3>
+
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
+               <br>
            </div>
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <h3>News 2</h3>
+             </h3>
                <a href="#">
-                   <img class="img-responsive" src="../img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
-               <h3>
-                   <a href="#">News 2</a>
-               </h3>
+
                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
+               <br>
+           </div>
+           <div class="col-md-6 portfolio-item">
+             <h3>
+                 <h3>News 3</h3>
+             </h3>
+               <a href="#">
+                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+               </a>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
+               <br>
+           </div>
+           <div class="col-md-6 portfolio-item">
+             <h3>
+                 <h3>News 4</h3>
+             </h3>
+               <a href="#">
+                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+               </a>
+
+               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+               <i class="fa fa-plus"></i> <a href="#">Meer lezen</a>
+               <br>
            </div>
        </div>
-
-       <div class="row">
-           <div class="col-md-6 portfolio-item">
-               <a href="#">
-                   <img class="img-responsive" src="../img/700x400.jpg" alt="">
-               </a>
-               <h3>
-                   <a href="#">News 3</a>
-               </h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-           </div>
-           <div class="col-md-6 portfolio-item">
-               <a href="#">
-                   <img class="img-responsive" src="../img/700x400.jpg" alt="">
-               </a>
-               <h3>
-                   <a href="#">News 4</a>
-               </h3>
-               <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
-           </div>
-       </div>
-
-
 </div>
 <footer class="foos">
   <div class="container">
