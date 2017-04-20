@@ -56,6 +56,9 @@
                 <div class="col-xs-12">
                   <!--<div class="input-group input-group-lg">
                       <input type="text" class="form-control" />
+                  <!-- 
+                  <div class="input-group input-group-lg">
+                       <input type="text" class="form-control" />
                     <div class="input-group-btn">
                       <button type="submit" class="btn btn-default"><span class="	fa fa-search"></span></button>
                     </div>
@@ -92,6 +95,15 @@
                       </div>
                     </div>
 
+=======
+                  <div class="row icon portfolio-item center">
+                    <a href="{{ url('/news') }}"><div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div></a>
+                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
+                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
+>>>>>>> 980e4036f4e633d99d7d3791560ea9032bda16cb
                   </div>
                 </div>
               </div>
@@ -114,7 +126,7 @@
          @if (isset($approvedArticles[0]))
            <div class="col-md-6 portfolio-item">
                <a href="article/{{ $approvedArticles[0]->id }}">
-                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
                </a>
                <h3>
                    <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
@@ -126,7 +138,7 @@
          @if (isset($approvedArticles[1]))
            <div class="col-md-6 portfolio-item">
                <a href="article/{{ $approvedArticles[1]->id }}">
-                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="../storage/app/{{$approvedArticles[1]->link1}}" alt="">
                </a>
                <h3>
                    <a href="article/{{ $approvedArticles[1]->id }}">{{ $approvedArticles[1]->title}}</a>
@@ -140,7 +152,7 @@
         @if (isset($approvedArticles[2]))
            <div class="col-md-6 portfolio-item">
                <a href="article/{{ $approvedArticles[2]->id }}">
-                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="../storage/app/{{$approvedArticles[2]->link1}}" alt="">
                </a>
                <h3>
                    <a href="article/{{ $approvedArticles[2]->id }}">{{ $approvedArticles[2]->title}}</a>
@@ -151,7 +163,7 @@
         @if (isset($approvedArticles[3]))
            <div class="col-md-6 portfolio-item">
                <a href="article/{{ $approvedArticles[3]->id }}">
-                   <img class="img-responsive" src="img/700x400.jpg" alt="">
+                   <img class="img-responsive" src="../storage/app/{{$approvedArticles[3]->link1}}" alt="">
                </a>
                <h3>
                   <a href="article/{{ $approvedArticles[3]->id }}">{{ $approvedArticles[3]->title}}</a>

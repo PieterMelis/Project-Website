@@ -102,31 +102,31 @@
 								<div id="one" class="tab-pane fade in active">
 									<br>
 	                <div class="panel-content">
-	                        {!! Form::open() !!}
+	                        {!! Form::open(array('files'=> true)) !!}
 
 	                            <div class="form-group">
-	                                {!! Form::label('title', 'Title (max. 255 characters')  !!}
+	                                {!! Form::label('title', 'Titel (max. 255 characters')  !!}
 	                                {!! Form::text('title', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('excerpt', 'Excerpt') !!}
+	                                {!! Form::label('excerpt', 'Samenvatting') !!}
 	                                {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('body', 'Body') !!}
+	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type') !!}
+	                                {!! Form::label('type', 'Type (to become obsolete)') !!}
 	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link1', 'upload 1') !!}
-	                                {!! Form::text('link1', null, ['class' => 'form-control']) !!}
+	                                {!! Form::label('link1', 'Afbeelding 1') !!}
+	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link2', 'upload 2') !!}
-	                                {!! Form::text('link2', null, ['class' => 'form-control']) !!}
+	                                {!! Form::label('link2', 'Afbeelding 2') !!}
+	                                {!! Form::file('link2', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
 
@@ -141,32 +141,29 @@
 								<div id="two" class="tab-pane fade">
 									<br>
 	                <div class="panel-content">
-	                        {!! Form::open() !!}
+	                        {!! Form::open(array('files'=> true)) !!}
 
 	                            <div class="form-group">
-	                                {!! Form::label('title', 'Title (max. 255 characters')  !!}
+	                                {!! Form::label('title', 'Titel (max. 255 characters')  !!}
 	                                {!! Form::text('title', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('excerpt', 'Excerpt') !!}
+	                                {!! Form::label('excerpt', 'Samenvatting') !!}
 	                                {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('body', 'Body') !!}
+	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type') !!}
+	                                {!! Form::label('type', 'Type (to become obsolote)') !!}
 	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link1', 'Upload 1') !!}
+	                                {!! Form::label('link1', 'Video 1') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
 	                            </div>
-	                            <div class="form-group">
-	                                {!! Form::label('link2', 'Upload 2') !!}
-	                                {!! Form::file('link2', null, ['class' => 'form-control']) !!}
-	                            </div>
+	                            
 	                            <div class="form-group">
 
 	                                <button type="submit" class="btn btn-default">
@@ -179,43 +176,40 @@
 								</div>
 								<div id="three" class="tab-pane fade">
 									<br>
-									<div class="panel-content">
-													{!! Form::open() !!}
+					<div class="panel-content">
+									{!! Form::open(array('files'=> true)) !!}
 
-															<div class="form-group">
-																	{!! Form::label('title', 'Title (max. 255 characters')  !!}
-																	{!! Form::text('title', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
-																	{!! Form::label('excerpt', 'Excerpt') !!}
-																	{!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
-																	{!! Form::label('body', 'Body') !!}
-																	{!! Form::textArea('body', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
-																	{!! Form::label('type', 'Type') !!}
-																	{!! Form::text('type', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
-																	{!! Form::label('link1', 'upload 1') !!}
-																	{!! Form::text('link1', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
-																	{!! Form::label('link2', 'upload 2') !!}
-																	{!! Form::text('link2', null, ['class' => 'form-control']) !!}
-															</div>
-															<div class="form-group">
+											<div class="form-group">
+													{!! Form::label('title', 'Titel (max. 255 characters')  !!}
+													{!! Form::text('title', null, ['class' => 'form-control']) !!}
+											</div>
+											<div class="form-group">
+													{!! Form::label('excerpt', 'Samenvatting') !!}
+													{!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
+											</div>
+											<div class="form-group">
+													{!! Form::label('body', 'Inhoud') !!}
+													{!! Form::textArea('body', null, ['class' => 'form-control']) !!}
+											</div>
+											<div class="form-group">
+													{!! Form::label('type', 'Type') !!}
+													{!! Form::text('type', null, ['class' => 'form-control']) !!}
+											</div>
+											<div class="form-group">
+													{!! Form::label('link1', 'Video 1') !!}
+													{!! Form::file('link1', null, ['class' => 'form-control']) !!}
+											</div>
+											
+											<div class="form-group">
 
-																	<button type="submit" class="btn btn-default">
-																			<i class="fa fa-plus"></i> Toeveoegen
-																	</button>
-															</div>
-															{!! Form::close() !!}
-									</div>
-								</div>
-							</div>
+													<button type="submit" class="btn btn-default">
+															<i class="fa fa-plus"></i> Toeveoegen
+													</button>
+											</div>
+											{!! Form::close() !!}
+					</div>
+				</div>
+			</div>
 
 
 
