@@ -115,12 +115,12 @@
 	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link1', 'upload 1') !!}
-	                                {!! Form::text('link1', null, ['class' => 'form-control']) !!}
+	                                {!! Form::label('link1', 'Upload 1') !!}
+	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link2', 'upload 2') !!}
-	                                {!! Form::text('link2', null, ['class' => 'form-control']) !!}
+	                                {!! Form::label('link2', 'Upload 2') !!}
+	                                {!! Form::file('link2', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
 
