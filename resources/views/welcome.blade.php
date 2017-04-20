@@ -67,6 +67,7 @@
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+
                   </div>
                 </div>
               </div>
@@ -95,6 +96,7 @@
                    <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
                </h3>
                <p>{{ $approvedArticles[0]->excerpt}}</p>
+
            </div>
          @endif
          @if (isset($approvedArticles[1]))
