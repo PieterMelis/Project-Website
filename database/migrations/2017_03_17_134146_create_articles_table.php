@@ -24,7 +24,7 @@ class CreateArticlesTable extends Migration
             //Links still need to be optimized. For now an article can have 2 images (or 1 img 1 video) links
             $table->string('link1');
             $table->string('link2');
-
+            $table->boolean('approved')->default(true);
             $table->timestamps();
 
             //link article to creating editor            
