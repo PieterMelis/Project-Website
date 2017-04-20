@@ -21,7 +21,14 @@ html, body {
   margin-top: 25em;
   color: black;
 }
+.icons{
+  text-align: center;
+  margin: 0 auto;
+}
 .icon{
+  color: white;
+  border: 0.2em white solid;
+  padding: 1em 0;
 }
 footer{
   margin-top: 10em;

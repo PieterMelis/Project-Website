@@ -54,19 +54,43 @@
             <form role="form">
               <div class="row">
                 <div class="col-xs-12">
-                  <div class="input-group input-group-lg">
+                  <!--<div class="input-group input-group-lg">
                       <input type="text" class="form-control" />
                     <div class="input-group-btn">
                       <button type="submit" class="btn btn-default"><span class="	fa fa-search"></span></button>
                     </div>
-                  </div>
-                  <div class="row icon portfolio-item">
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
+                  </div>-->
+                  <div class="row icons portfolio-item">
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-video-camera fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-map-o fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-gamepad fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-info fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
+                    <div class="col-sm-2">
+                      <div class="icon">
+                        <i class="fa fa-comments-o fa-5x" aria-hidden="true"></i>
+                      </div>
+                    </div>
 
                   </div>
                 </div>
