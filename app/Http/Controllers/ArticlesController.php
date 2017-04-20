@@ -8,6 +8,7 @@ use Request;
 use Auth;
 use Carbon\Carbon;
 use Illuminate\Support\Str;
+use Illuminate\Support\Facades\Hash;
 
 
 class ArticlesController extends Controller
@@ -37,8 +38,16 @@ class ArticlesController extends Controller
 
 
     public function store(\App\Http\Requests\CreatePostRequest $request){
-         $article = new Article($request->all());
-         
+         $article = new Article($request->all());   
+         $ext = $request->file('link1')->extension();
+         $path = $request->file('link1')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+         $article->link1 = $path;    
+         if( null !==$request->file('link2')){
+            $ext = $request->file('link2')->extension();
+
+            $path = $request->file('link2')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+            $article->link2 = $path; 
+         }
          Auth::user()->articles()->save($article);    
         return redirect('/');
     }
