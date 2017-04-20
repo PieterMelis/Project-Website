@@ -18,9 +18,10 @@
                <img class="img-responsive" src="../img/700x400.jpg" alt="">
            </a>
            <h3>
-               <a href="#">News 1</a>
+               <h2>{{ $article->title }}</h2>
            </h3>
-           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
+           <b>{{ $article->excerpt }}</b>
+           <p>{{ $article->body }}</p>
        </div>
 
    </div>

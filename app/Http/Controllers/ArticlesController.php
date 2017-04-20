@@ -41,8 +41,8 @@ class ArticlesController extends Controller
         return redirect('/');
     }
     public function show($id){
-    	//find functunality
-    	return view('show');
+    	$article = Article::findOrFail($id);
+    	return view('show', compact('article'));
     }
     public function news(){
     	//find functunality

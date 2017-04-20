@@ -84,7 +84,7 @@
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
                <h3>
-                   <a href="#">{{ $approvedArticles[0]->title}}</a>
+                   <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
                </h3>
                <p>{{ $approvedArticles[0]->excerpt}}</p>
            </div>
@@ -95,7 +95,7 @@
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
                <h3>
-                   <a href="#">{{ $approvedArticles[1]->title}}</a>
+                   <a href="article/{{ $approvedArticles[1]->id }}">{{ $approvedArticles[1]->title}}</a>
                </h3>
                <p>{{ $approvedArticles[1]->excerpt}}</p>
            </div>
@@ -109,7 +109,7 @@
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
                <h3>
-                   <a href="#">{{ $approvedArticles[2]->title}}</a>
+                   <a href="article/{{ $approvedArticles[2]->id }}">{{ $approvedArticles[2]->title}}</a>
                </h3>
                <p>{{ $approvedArticles[2]->excerpt}}</p>
            </div>
@@ -120,7 +120,7 @@
                    <img class="img-responsive" src="img/700x400.jpg" alt="">
                </a>
                <h3>
-                  <a href="#">{{ $approvedArticles[3]->title}}</a>
+                  <a href="article/{{ $approvedArticles[3]->id }}">{{ $approvedArticles[3]->title}}</a>
                </h3>
                <p>{{ $approvedArticles[3]->excerpt}}</p>
            </div>
