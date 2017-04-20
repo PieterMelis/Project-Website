@@ -4,8 +4,10 @@
 @section('content')
 	<div class="container">
 		@if (Auth::guest())
+
 					<div class="row">
 							<div class="col-md-8 col-md-offset-2">
+
 
 											<div class="panel-body">
 													<form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
@@ -88,13 +90,17 @@
 
 
 	             <div class="breadcrumb">
-	                <a href="/Project-Web-Git/public">← Terug naar overzicht</a>
+	                <a href="/">← Terug naar overzicht</a>
 	            </div>
+							<ul class="nav nav-tabs">
+								<li class="active"><a data-toggle="tab" href="#one">Artikel toeveoegen</a></li>
+								<li><a data-toggle="tab" href="#two">Testimonial toevoegen</a></li>
+								<li><a data-toggle="tab" href="#three">Video toevoegen</a></li>
+							</ul>
 
-
-									<h3>Article toevoegen</h3>
-									<hr>
-
+							<div class="tab-content">
+								<div id="one" class="tab-pane fade in active">
+									<br>
 	                <div class="panel-content">
 	                        {!! Form::open() !!}
 
@@ -125,13 +131,93 @@
 	                            <div class="form-group">
 
 	                                <button type="submit" class="btn btn-default">
-	                                    <i class="fa fa-plus"></i> Add Article
+	                                    <i class="fa fa-plus"></i> Toeveoegen
 	                                </button>
 
 	                            </div>
-
 	                            {!! Form::close() !!}
 	                </div>
+								</div>
+								<div id="two" class="tab-pane fade">
+									<br>
+	                <div class="panel-content">
+	                        {!! Form::open() !!}
+
+	                            <div class="form-group">
+	                                {!! Form::label('title', 'Title (max. 255 characters')  !!}
+	                                {!! Form::text('title', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::label('excerpt', 'Excerpt') !!}
+	                                {!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::label('body', 'Body') !!}
+	                                {!! Form::textArea('body', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::label('type', 'Type') !!}
+	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::label('link1', 'upload 1') !!}
+	                                {!! Form::text('link1', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::label('link2', 'upload 2') !!}
+	                                {!! Form::text('link2', null, ['class' => 'form-control']) !!}
+	                            </div>
+	                            <div class="form-group">
+
+	                                <button type="submit" class="btn btn-default">
+	                                    <i class="fa fa-plus"></i> Toeveoegen
+	                                </button>
+	                            </div>
+	                            {!! Form::close() !!}
+	                </div>
+
+								</div>
+								<div id="three" class="tab-pane fade">
+									<br>
+									<div class="panel-content">
+													{!! Form::open() !!}
+
+															<div class="form-group">
+																	{!! Form::label('title', 'Title (max. 255 characters')  !!}
+																	{!! Form::text('title', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+																	{!! Form::label('excerpt', 'Excerpt') !!}
+																	{!! Form::text('excerpt', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+																	{!! Form::label('body', 'Body') !!}
+																	{!! Form::textArea('body', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+																	{!! Form::label('type', 'Type') !!}
+																	{!! Form::text('type', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+																	{!! Form::label('link1', 'upload 1') !!}
+																	{!! Form::text('link1', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+																	{!! Form::label('link2', 'upload 2') !!}
+																	{!! Form::text('link2', null, ['class' => 'form-control']) !!}
+															</div>
+															<div class="form-group">
+
+																	<button type="submit" class="btn btn-default">
+																			<i class="fa fa-plus"></i> Toeveoegen
+																	</button>
+															</div>
+															{!! Form::close() !!}
+									</div>
+								</div>
+							</div>
+
+
 
 	    </div>
 	    @endif

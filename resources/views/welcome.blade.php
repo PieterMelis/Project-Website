@@ -60,7 +60,7 @@
                       <button type="submit" class="btn btn-default"><span class="	fa fa-search"></span></button>
                     </div>
                   </div>
-                  <div class="row icon portfolio-item center">
+                  <div class="row icon ">
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
                     <div class="col-sm-2"><img class="img-responsive" src="../img/icon.png" alt=""></div>
