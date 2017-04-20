@@ -11,6 +11,24 @@ use Carbon\Carbon;
 
 class ArticlesController extends Controller
 {
+    public function index()
+    {        
+        $articles = Article::latest('updated_at')->get();
+        $i = 0;
+        foreach ($articles as $article) {
+            if($article->approved)
+            {   
+                if($i<4)
+                {
+                    $approvedArticles[$i] = $article;
+                    $i++;
+                }
+            }            
+        }     
+          
+        return view('welcome', compact('approvedArticles'));
+        
+    }
      public function create()
     {        
         return view('create');
@@ -20,7 +38,7 @@ class ArticlesController extends Controller
     public function store(\App\Http\Requests\CreatePostRequest $request){
          $article = new Article($request->all());
          Auth::user()->articles()->save($article);    
-        return redirect('home');
+        return redirect('/');
     }
     public function show($id){
     	//find functunality
