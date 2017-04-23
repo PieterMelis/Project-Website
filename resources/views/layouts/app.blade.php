@@ -51,6 +51,39 @@
                         &nbsp;
                     </ul>
 
+                    <ul class="topNav">
+                      <div class="col-xs-2">
+                        <a href="../news">
+                            <i class="fa fa-newspaper-o " aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a href="../news">
+                          <i class="fa fa-video-camera" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a href="../news">
+                          <i class="fa fa-map-o " aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a href="../news">
+                          <i class="fa fa-gamepad " aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a href="../news">
+                          <i class="fa fa-info" aria-hidden="true"></i>
+                        </a>
+                      </div>
+                      <div class="col-xs-2">
+                        <a href="../news">
+                          <i class="fa fa-comments-o " aria-hidden="true"></i>
+                        </a>
+                      </div>
+                    </ul>
+
                     <!-- Right Side Of Navbar -->
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
@@ -63,8 +96,9 @@
                                     {{ Auth::user()->name }} <span class="caret"></span>
                                 </a>
 
-                                <ul class="dropdown-menu" role="menu">
-                                    <li>
+                                <ul class="dropdown-menu " role="menu">
+
+                                    <li class="text-center">
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
@@ -75,6 +109,14 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
+                                    <div class="mNav mNavB text-center">
+                                      <li><a href="{{ url('/news') }}">Nieuws</a></li>
+                                      <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                                      <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                                      <li><a href="{{ url('/news') }}">Spel</a></li>
+                                      <li><a href="{{ url('/news') }}">Extra info</a></li>
+                                      <li><a href="{{ url('/news') }}">Chat</a></li>
+                                    </div>
                                 </ul>
                             </li>
                         @endif

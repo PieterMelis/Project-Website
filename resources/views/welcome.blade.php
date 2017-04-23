@@ -11,8 +11,10 @@
         <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
         <link href="{{ asset('css/style.css') }}" rel="stylesheet">
         <link href="{{ asset('css/bootstrap.min.css') }}" rel="stylesheet">
+        <link href="{{ asset('css/master.css') }}" rel="stylesheet">
     </head>
     <body>
       <div class="full">
@@ -30,11 +32,20 @@
                 <div class="collapse navbar-collapse nav navbar-nav navbar-right" id="bs-example-navbar-collapse-1">
                     <ul class="nav navbar-nav">
                       @if (Route::has('login'))
-                          <div class="nav navbar-nav navbar-right">
+                          <div class="nav navbar-nav navbar-right mNavAll">
                               @if (Auth::check())
-                                <li>
-                                  <a href="{{ url('/home') }}">Home</a>
+                                <li class="mNavB">
+                                  <a href="{{ url('/home') }}">Dashboard</a>
                                 </li>
+                                <div class="mNav mNavB">
+                                  <li><a href="{{ url('/news') }}">Nieuws</a></li>
+                                  <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                                  <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                                  <li><a href="{{ url('/news') }}">Spel</a></li>
+                                  <li><a href="{{ url('/news') }}">Extra info</a></li>
+                                  <li><a href="{{ url('/news') }}">Chat</a></li>
+                                </div>
+
                               @else
                                 <li>
                                   <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
@@ -56,7 +67,7 @@
                 <div class="col-xs-12">
                   <!--<div class="input-group input-group-lg">
                       <input type="text" class="form-control" />
-                  <!-- 
+                  <!--
                   <div class="input-group input-group-lg">
                        <input type="text" class="form-control" />
                     <div class="input-group-btn">
@@ -65,9 +76,11 @@
                   </div>-->
                   <div class="row icons portfolio-item">
                     <div class="col-sm-2">
-                      <div class="icon">
-                        <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
-                      </div>
+                      <a href="news">
+                        <div class="icon">
+                          <i class="fa fa-newspaper-o fa-5x" aria-hidden="true"></i>
+                        </div>
+                      </a>
                     </div>
                     <div class="col-sm-2">
                       <div class="icon">
@@ -95,15 +108,6 @@
                       </div>
                     </div>
 
-=======
-                  <div class="row icon portfolio-item center">
-                    <a href="{{ url('/news') }}"><div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div></a>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
->>>>>>> 980e4036f4e633d99d7d3791560ea9032bda16cb
                   </div>
                 </div>
               </div>
@@ -125,12 +129,13 @@
        <div class="row">
          @if (isset($approvedArticles[0]))
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
+             </h3>
                <a href="article/{{ $approvedArticles[0]->id }}">
                    <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
                </a>
-               <h3>
-                   <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
-               </h3>
+
                <p>{{ $approvedArticles[0]->excerpt}}</p>
 
            </div>
@@ -175,19 +180,13 @@
 </div>
 <footer class="foos">
   <div class="container">
-    <div class="col-md-6 portfolio-item fo">
-      <h1>Contacteer de stad</h1>
-      <li>een</li>
-      <li>twee</li>
-      <li>drie</li>
-      <li>vier</li>
-    </div>
-    <div class="col-md-6 portfolio-item fo">
-      <h1>Volg stad Antwerpen</h1>
-      <li>icon</li>
-      <li>icon</li>
-      <li>icon</li>
-      <li>icon</li>
+
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <h3>Volg stad Antwerpen</h3>
+      <div class="col-xs-3"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></div>
+      <div class="col-xs-3"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></div>
+      <div class="col-xs-3"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></div>
+      <div class="col-xs-3"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
     </div>
   </div>
 </footer>
