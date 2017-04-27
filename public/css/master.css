@@ -1,3 +1,61 @@
+/* Webfont: Antwerpen-Regular */@font-face {
+    font-family: 'Antwerpen';
+    src: url('../fonts/Antwerpen-Regular.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/Antwerpen-Regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/Antwerpen-Regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Antwerpen-Regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/Antwerpen-Regular.svg#Antwerpen-Regular') format('svg'); /* Legacy iOS */
+    font-style: normal;
+    font-weight: normal;
+    text-rendering: optimizeLegibility;
+}
+
 body{
-  
+  font-family: 'Antwerpen';
+}
+p{
+  font-family: Georgia;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*-----------------------------Mobile nav-----------------------------------*/
+.mNav{display: none;}
+.mNavB a{padding: 0;}
+.topNav div{
+  margin-top: 8px;
+  width: 3em;
+  text-align: center;
+}
+.topNav{
+  margin: 0 auto;
+  font-size: 1.5em;
+}
+@media only screen and (max-width: 768px) {
+    .full{height: 50px}
+    .bigNav, .topNav{display: none;}
+    .mNavAll{text-align: center;}
+    .mNav{display: block;}
+    .mNavB li{
+      padding: 10px;
+      color: #9d9d9d;
+      border-top: .2em black solid;
+    }
 }
