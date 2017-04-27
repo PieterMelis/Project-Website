@@ -94,16 +94,6 @@
                         <i class="fa fa-comments-o fa-5x" aria-hidden="true"></i>
                       </div>
                     </div>
-
-=======
-                  <div class="row icon portfolio-item center">
-                    <a href="{{ url('/news') }}"><div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div></a>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
-                    <div class="col-sm-2"><img class="img-responsive" src="img/icon.png" alt=""></div>
->>>>>>> 980e4036f4e633d99d7d3791560ea9032bda16cb
                   </div>
                 </div>
               </div>
