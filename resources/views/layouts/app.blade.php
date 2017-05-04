@@ -88,8 +88,17 @@
                     <ul class="nav navbar-nav navbar-right">
                         <!-- Authentication Links -->
                         @if (Auth::guest())
-                            <li><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
-                            <li><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
+                          <div class="mNav mNavB text-center">
+                            <li><a href="{{ url('/news') }}">Nieuws</a></li>
+                            <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                            <li><a href="{{ url('/news') }}">Spel</a></li>
+                            <li><a href="{{ url('/news') }}">Extra info</a></li>
+                            <li><a href="{{ url('/news') }}">Chat</a></li>
+                          </div>
+                            <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
+                            <li class="text-center"><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
+
                         @else
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">

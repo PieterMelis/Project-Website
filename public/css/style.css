@@ -16,11 +16,10 @@ html, body {
 }
 .homeContent{
   color: black;
+  display: block;
 }
 .bigNav{
-  position: relative;
-  margin-top: 25em;
-  color: black;
+  margin-top: 5em;
 }
 .icons{
   text-align: center;
@@ -38,4 +37,11 @@ footer{
 .foos{
   background-color: #0064B4;
   color: white;
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+.icons{font-size: 0.5em}
+
 }
