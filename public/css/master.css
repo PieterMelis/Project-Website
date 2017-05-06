@@ -16,8 +16,10 @@ body{
 p{
   font-family: Georgia;
 }
-
-
+.none-margin{
+  margin: 0;
+}
+.nav{overflow:hidden;}
 
 
 
@@ -38,24 +40,34 @@ p{
 
 /*-----------------------------Mobile nav-----------------------------------*/
 .mNav{display: none;}
-.mNavB a{padding: 0;}
+.mNavB a{margin: 0;}
 .topNav div{
   margin-top: 8px;
   width: 3em;
   text-align: center;
 }
-.topNav{
+.topNav i{
+    color: #9d9d9d;
+  }
+  .topNav{
   margin: 0 auto;
   font-size: 1.5em;
 }
 @media only screen and (max-width: 768px) {
-    .full{height: 50px}
+
     .bigNav, .topNav{display: none;}
+    .topNav li{color: #9d9d9d;}
     .mNavAll{text-align: center;}
-    .mNav{display: block;}
-    .mNavB li{
+    .mNav{
+      display: block;
+      z-index: 5;
+    }
+    .mNavB li, a{
       padding: 10px;
       color: #9d9d9d;
-      border-top: .2em black solid;
+    }
+    .mNavB a:hover{
+      color: white;
+      text-decoration: none;
     }
 }
