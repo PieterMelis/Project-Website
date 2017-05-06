@@ -128,12 +128,13 @@
        <div class="row">
          @if (isset($approvedArticles[0]))
            <div class="col-md-6 portfolio-item">
-             <h3>
-                 <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
-             </h3>
+             
                <a href="article/{{ $approvedArticles[0]->id }}">
                    <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
                </a>
+               <h3>
+                 <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
+             </h3>
 
                <p>{{ $approvedArticles[0]->excerpt}}</p>
 
