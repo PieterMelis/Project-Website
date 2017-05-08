@@ -55,31 +55,37 @@
                       <div class="col-xs-2">
                         <a href="../news">
                             <i class="fa fa-newspaper-o " aria-hidden="true"></i>
+                            <h6 class="none-margin text-center">Nieuws</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
                           <i class="fa fa-video-camera" aria-hidden="true"></i>
+                          <h6 class="none-margin text-center">Video's</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
                           <i class="fa fa-map-o " aria-hidden="true"></i>
+                          <h6 class="none-margin text-center">Kaart</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
                           <i class="fa fa-gamepad " aria-hidden="true"></i>
+                          <h6 class="none-margin text-center">Spel</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
-                        <a href="../news">
+                        <a href="../info">
                           <i class="fa fa-info" aria-hidden="true"></i>
+                          <h6 class="none-margin text-center">Info</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
                           <i class="fa fa-comments-o " aria-hidden="true"></i>
+                          <h6 class="none-margin text-center">Chat</h6>
                         </a>
                       </div>
                     </ul>
@@ -93,20 +99,26 @@
                             <li><a href="{{ url('/news') }}">Testimonials</a></li>
                             <li><a href="{{ url('/news') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/news') }}">Extra info</a></li>
+                            <li><a href="{{ url('/info') }}">Extra info</a></li>
                             <li><a href="{{ url('/news') }}">Chat</a></li>
                           </div>
                             <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
                             <li class="text-center"><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
 
                         @else
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
-                                    {{ Auth::user()->name }} <span class="caret"></span>
-                                </a>
 
-                                <ul class="dropdown-menu " role="menu">
 
+                                    <div class="mNav mNavB text-center">
+                                      <li><a href="{{ url('/news') }}">Nieuws</a></li>
+                                      <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                                      <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                                      <li><a href="{{ url('/news') }}">Spel</a></li>
+                                      <li><a href="{{ url('/info') }}">Extra info</a></li>
+                                      <li><a href="{{ url('/news') }}">Chat</a></li>
+                                    </div>
+                                    <li class="mNavB text-center">
+                                      <a href="{{ url('/home') }}">Dashboard</a>
+                                    </li>
                                     <li class="text-center">
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
@@ -118,16 +130,7 @@
                                             {{ csrf_field() }}
                                         </form>
                                     </li>
-                                    <div class="mNav mNavB text-center">
-                                      <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                                      <li><a href="{{ url('/news') }}">Testimonials</a></li>
-                                      <li><a href="{{ url('/news') }}">Studenten map</a></li>
-                                      <li><a href="{{ url('/news') }}">Spel</a></li>
-                                      <li><a href="{{ url('/news') }}">Extra info</a></li>
-                                      <li><a href="{{ url('/news') }}">Chat</a></li>
-                                    </div>
-                                </ul>
-                            </li>
+
                         @endif
                     </ul>
                 </div>

@@ -14,24 +14,26 @@
         <div class="row">
          @if (isset($latestArticles[0]))
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <a href="article/{{ $latestArticles[0]->id }}">{{ $latestArticles[0]->title}}</a>
+             </h3>
                <a href="article/{{ $latestArticles[0]->id }}">
                    <img class="img-responsive" src="../storage/app/{{$latestArticles[0]->link1}}" alt="">
                </a>
-               <h3>
-                   <a href="article/{{ $latestArticles[0]->id }}">{{ $latestArticles[0]->title}}</a>
-               </h3>
+
                <p>{{ $latestArticles[0]->excerpt}}</p>
 
            </div>
          @endif
          @if (isset($latestArticles[1]))
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <a href="article/{{ $latestArticles[1]->id }}">{{ $latestArticles[1]->title}}</a>
+             </h3>
                <a href="article/{{ $latestArticles[1]->id }}">
                    <img class="img-responsive" src="../storage/app/{{ $latestArticles[1]->link1}}" alt="">
                </a>
-               <h3>
-                   <a href="article/{{ $latestArticles[1]->id }}">{{ $latestArticles[1]->title}}</a>
-               </h3>
+
                <p>{{ $latestArticles[1]->excerpt}}</p>
            </div>
           @endif
@@ -40,12 +42,13 @@
        <div class="row">
         @if (isset($latestArticles[2]))
            <div class="col-md-6 portfolio-item">
+             <h3>
+                 <a href="article/{{ $latestArticles[2]->id }}">{{ $latestArticles[2]->title}}</a>
+             </h3>
                <a href="article/{{ $latestArticles[2]->id }}">
                    <img class="img-responsive" src="../storage/app/{{ $latestArticles[2]->link1}}" alt="">
                </a>
-               <h3>
-                   <a href="article/{{ $latestArticles[2]->id }}">{{ $latestArticles[2]->title}}</a>
-               </h3>
+
                <p>{{ $latestArticles[2]->excerpt}}</p>
            </div>
         @endif

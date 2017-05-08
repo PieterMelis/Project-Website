@@ -43,12 +43,23 @@
                           <li class="mNavB">
                             <a href="{{ url('/home') }}">Dashboard</a>
                           </li>
+                          <li class="text-center">
+                              <a href="{{ route('logout') }}"
+                                  onclick="event.preventDefault();
+                                           document.getElementById('logout-form').submit();">
+                                  Logout
+                              </a>
+
+                              <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                                  {{ csrf_field() }}
+                              </form>
+                          </li>
                           <div class="mNav mNavB">
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
                             <li><a href="{{ url('/news') }}">Testimonials</a></li>
                             <li><a href="{{ url('/news') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/news') }}">Extra info</a></li>
+                            <li><a href="{{ url('/info') }}">Extra info</a></li>
                             <li><a href="{{ url('/news') }}">Chat</a></li>
                           </div>
 
@@ -58,7 +69,7 @@
                             <li><a href="{{ url('/news') }}">Testimonials</a></li>
                             <li><a href="{{ url('/news') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/news') }}">Extra info</a></li>
+                            <li><a href="{{ url('/info') }}">Extra info</a></li>
                             <li><a href="{{ url('/news') }}">Chat</a></li>
                           </div>
                           <li>
@@ -90,7 +101,7 @@
 
         <hgroup>
             <h1>Studeren in Antwerpen</h1>
-            <h3>Meer informatie over hoger onderwijs</h3>
+            <h3>Het hoger onderwijs heeft een aparte structuur en een eigen systeem. Hier vind je de regels die gelden voor alle hoger onderwijsinstellingen in Vlaanderen.</h3>
         </hgroup>
         <a href="https://www.gate15.be/nl/content/wegwijs" target="blank" class="btn btn-hero btn-lg" >Meer</a>
         <div class="bigNav">
@@ -100,32 +111,29 @@
 
                 <div class="row icons portfolio-item">
                   <div class="col-sm-2">
-                    <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Nieuws</h4>
                   </div>
                   <div class="col-sm-2">
-                    <div class="icon">
-                      <i class="fa fa-video-camera fa-4x" aria-hidden="true"></i>
-                    </div>
+                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Video's</h4>
                   </div>
                   <div class="col-sm-2">
-                    <div class="icon">
-                      <i class="fa fa-map-o fa-4x" aria-hidden="true"></i>
-                    </div>
+                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Kaart</h4>
                   </div>
                   <div class="col-sm-2">
-                    <div class="icon">
-                      <i class="fa fa-gamepad fa-4x" aria-hidden="true"></i>
-                    </div>
+                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Spel</h4>
                   </div>
                   <div class="col-sm-2">
-                    <div class="icon">
-                      <i class="fa fa-info fa-4x" aria-hidden="true"></i>
-                    </div>
+                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Info</h4>
                   </div>
                   <div class="col-sm-2">
-                    <div class="icon">
-                      <i class="fa fa-comments-o fa-4x" aria-hidden="true"></i>
-                    </div>
+                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Chat</h4>
+
                   </div>
 
                 </div>
@@ -138,21 +146,97 @@
     <div class="item slides">
       <div class="slide-2"></div>
       <div class="hero">
+
         <hgroup>
-            <h1>We are smart</h1>
-            <h3>Get start your next awesome project</h3>
+            <h1>Op zoek naar een kot ?</h1>
+            <h3>Woon je te ver van de stad om te pendelen of heb je gewoon goesting om echt op je eigen benen te staan? Dan ga je op kot. </h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        <a href="https://www.gate15.be/nl/content/kot" target="blank" class="btn btn-hero btn-lg" >Meer</a>
+        <div class="bigNav">
+          <form role="form">
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="row icons portfolio-item">
+                  <div class="col-sm-2">
+                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Nieuws</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Video's</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Kaart</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Spel</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Info</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Chat</h4>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <div class="item slides">
       <div class="slide-3"></div>
       <div class="hero">
+
         <hgroup>
-            <h1>We are amazing</h1>
-            <h3>Get start your next awesome project</h3>
+            <h1>Studentenjobs</h1>
+            <h3>Je komt naar Antwerpen om te studeren en te ontspannen.  Helaas zijn leuke activiteiten en gezellige plekjes vaak iets duurder, en dus heb je extra cash nodig...</h3>
         </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">See all features</button>
+        <a href="https://www.gate15.be/nl/content/studentenjob" target="blank" class="btn btn-hero btn-lg" >Meer</a>
+        <div class="bigNav">
+          <form role="form">
+            <div class="row">
+              <div class="col-xs-12">
+
+                <div class="row icons portfolio-item">
+                  <div class="col-sm-2">
+                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Nieuws</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Video's</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Kaart</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Spel</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Info</h4>
+                  </div>
+                  <div class="col-sm-2">
+                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <h4>Chat</h4>
+
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

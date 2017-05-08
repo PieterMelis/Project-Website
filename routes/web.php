@@ -19,3 +19,7 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index');
 Route::post('article/add', 'ArticlesController@store');
+
+Route::get('/info', function () {
+    return view('info') ;
+});

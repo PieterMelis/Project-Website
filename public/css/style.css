@@ -21,6 +21,9 @@ html, body {
 .bigNav{
   margin-top: 5em;
 }
+.bigNav h4{
+  font-size: 1.5em;
+}
 .icons{
   text-align: center;
   margin: 0 auto;

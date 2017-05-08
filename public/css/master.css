@@ -46,12 +46,12 @@ p{
   width: 3em;
   text-align: center;
 }
-.topNav i{
+.topNav i, .topNav h6 {
     color: #9d9d9d;
   }
   .topNav{
   margin: 0 auto;
-  font-size: 1.5em;
+  font-size: 1.8em;
 }
 @media only screen and (max-width: 768px) {
 
