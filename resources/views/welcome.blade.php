@@ -57,7 +57,7 @@
                           <div class="mNav mNavB">
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
                             <li><a href="{{ url('/news') }}">Testimonials</a></li>
-                            <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                            <li><a href="{{ url('/map') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Extra info</a></li>
                             <li><a href="{{ url('/news') }}">Chat</a></li>
@@ -67,7 +67,7 @@
                           <div class="mNav mNavB text-center">
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
                             <li><a href="{{ url('/news') }}">Testimonials</a></li>
-                            <li><a href="{{ url('/news') }}">Studenten map</a></li>
+                            <li><a href="{{ url('/map') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Extra info</a></li>
                             <li><a href="{{ url('/news') }}">Chat</a></li>

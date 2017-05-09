@@ -26,3 +26,7 @@ Route::post('article/add', 'ArticlesController@store');
 Route::get('/info', function () {
     return view('info') ;
 });
+
+Route::get('/map', function () {
+    return view('map') ;
+});

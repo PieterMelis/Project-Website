@@ -21,8 +21,12 @@ p{
 }
 .nav{overflow:hidden;}
 
-
-
+.viewMap{
+  margin-top: -80px;
+}
+.createMap{
+  margin-top: -25px;
+}
 
 
 
