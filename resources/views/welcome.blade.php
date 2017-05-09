@@ -191,10 +191,6 @@
           </form>
         </div>
 
-            <h1>We are smart</h1>
-            <h3>Get started on your next awesome adventure</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">More information</button>
 
       </div>
     </div>
@@ -245,11 +241,6 @@
             </div>
           </form>
         </div>
-
-            <h1>We are amazing</h1>
-            <h3>Get started on your next awesome adventure</h3>
-        </hgroup>
-        <button class="btn btn-hero btn-lg" role="button">More information</button>
 
       </div>
     </div>
