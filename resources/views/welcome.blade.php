@@ -148,6 +148,7 @@
       <div class="hero">
 
         <hgroup>
+
             <h1>Op zoek naar een kot ?</h1>
             <h3>Woon je te ver van de stad om te pendelen of heb je gewoon goesting om echt op je eigen benen te staan? Dan ga je op kot. </h3>
         </hgroup>
@@ -189,6 +190,12 @@
             </div>
           </form>
         </div>
+
+            <h1>We are smart</h1>
+            <h3>Get started on your next awesome adventure</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">More information</button>
+
       </div>
     </div>
     <div class="item slides">
@@ -196,6 +203,7 @@
       <div class="hero">
 
         <hgroup>
+
             <h1>Studentenjobs</h1>
             <h3>Je komt naar Antwerpen om te studeren en te ontspannen.  Helaas zijn leuke activiteiten en gezellige plekjes vaak iets duurder, en dus heb je extra cash nodig...</h3>
         </hgroup>
@@ -237,9 +245,16 @@
             </div>
           </form>
         </div>
+
+            <h1>We are amazing</h1>
+            <h3>Get started on your next awesome adventure</h3>
+        </hgroup>
+        <button class="btn btn-hero btn-lg" role="button">More information</button>
+
       </div>
     </div>
   </div>
+
 
 <div class="homeContent container">
   <!-- Page Header -->
@@ -252,13 +267,13 @@
  <div class="row">
    @if (isset($approvedArticles[0]))
      <div class="col-md-6 portfolio-item">
-       <h3>
-           <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
-       </h3>
+
          <a href="article/{{ $approvedArticles[0]->id }}">
              <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
          </a>
-
+        <h3>
+           <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
+       </h3>
          <p>{{ $approvedArticles[0]->excerpt}}</p>
 
      </div>
@@ -300,6 +315,7 @@
      </div>
   @endif
  </div>
+
 </div>
 
 

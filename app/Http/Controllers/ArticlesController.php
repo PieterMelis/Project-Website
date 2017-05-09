@@ -35,6 +35,48 @@ class ArticlesController extends Controller
     {        
         return view('create');
     }
+     public function delete($id){
+        $article = Article::findOrFail($id);
+        if(Auth::user()){
+            $article->delete();
+        }
+        return redirect('home');
+    }
+    public function editView($id){
+        $article = Article::findOrFail($id);        
+        return view('edit', compact('article'));
+
+    }
+    public function edit($id, \App\Http\Requests\CreatePostRequest $request){
+        $article = Article::findOrFail($id);
+        $updatedArticle = new Article($request->all());
+        if( null !==$request->file('link1')){   
+            $ext = $request->file('link1')->extension();
+            $path = $request->file('link1')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+            $updatedArticle->link1 = $path;    
+            if( null !==$request->file('link2')){
+                $ext = $request->file('link2')->extension();
+
+                $path = $request->file('link2')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+                $updatedArticle->link2 = $path; 
+            } 
+        }
+        $article['title'] = $updatedArticle['title'];
+        $article['excerpt'] = $updatedArticle['excerpt'];
+        $article['body'] = $updatedArticle['body'];
+        $article['type'] = $updatedArticle['type'];
+        if (null !== $updatedArticle['link1']){$article['link1'] = $updatedArticle['link1'];}
+        if (null !== $updatedArticle['link2']){$article['link2'] = $updatedArticle['link2'];}   
+        
+
+
+
+
+        $article->update();
+        $redirect = 'article/' . $article['id'];     
+        return redirect($redirect);
+
+    }
 
 
     public function store(\App\Http\Requests\CreatePostRequest $request){
@@ -55,6 +97,15 @@ class ArticlesController extends Controller
     	$article = Article::findOrFail($id);
     	return view('show', compact('article'));
     }
+
+
+
+
+
+
+
+
+
     public function news(){
     	 $articles = Article::latest('updated_at')->get();
         $i = 0;
