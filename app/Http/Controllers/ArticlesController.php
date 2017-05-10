@@ -48,7 +48,9 @@ class ArticlesController extends Controller
 
     }
     public function edit($id, \App\Http\Requests\CreatePostRequest $request){
+        
         $article = Article::findOrFail($id);
+        if(Auth::user()){
         $updatedArticle = new Article($request->all());
         if( null !==$request->file('link1')){   
             $ext = $request->file('link1')->extension();
@@ -73,6 +75,7 @@ class ArticlesController extends Controller
 
 
         $article->update();
+        }
         $redirect = 'article/' . $article['id'];     
         return redirect($redirect);
 
