@@ -90,7 +90,7 @@
 
 
 	             <div class="breadcrumb">
-	                <a href="/">← Terug naar overzicht</a>
+	                <a href="../home">← Terug naar overzicht</a>
 	            </div>
 							<ul class="nav nav-tabs">
 								<li class="active"><a data-toggle="tab" href="#one">Artikel toeveoegen</a></li>

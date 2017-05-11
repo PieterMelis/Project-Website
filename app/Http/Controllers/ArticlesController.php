@@ -46,6 +46,28 @@ class ArticlesController extends Controller
 
         return view('users', compact('users'));
     }
+    public function editUser($id)
+    {        
+        $user = User::findOrFail($id);
+
+        return view('editUser', compact('user'));
+    }
+    public function changeUser($id, \App\Http\Requests\CreatePostRequest $request){
+        
+        $user = User::findOrFail($id);
+        if(strtoupper(Auth::user()->role) == 'ADMIN'){
+        $updatedUser = new User($request->all());
+        
+        $user['name'] = $updatedUser['name'];
+        $user['email'] = $updatedUser['email'];
+        $user['role'] = $updatedUser['role'];
+        $user->update();
+        }
+        $redirect = 'users';     
+        return redirect($redirect);
+
+    }
+
      public function delete($id){
         $article = Article::findOrFail($id);
         if(Auth::user()){

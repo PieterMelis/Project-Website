@@ -17,6 +17,8 @@ Route::get('news', 'ArticlesController@News');
 Route::get('/', 'ArticlesController@Index');
 Route::get('yourarticles', 'ArticlesController@userarticles');
 Route::get('users', 'ArticlesController@users');
+Route::get('user/{id}', 'ArticlesController@editUser');
+Route::post('user/{id}', 'ArticlesController@changeUser');
 Route::get('article/edit/{id}', 'ArticlesController@editView');
 Route::post('article/edit/{id}', 'ArticlesController@edit');
 
