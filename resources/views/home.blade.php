@@ -9,6 +9,10 @@
 
                 <div class="panel-body">
                   <a href="article/add"><h6>Artikel toevoegen</h6></a>
+                  <a href="yourarticles"><h6>Uw artikels</h6></a>
+                  @if (strtoupper(Auth::user()->role) == 'ADMIN')
+                  <a href="users"><h6>Beheer gebruikers</h6></a>
+                  @endif
                 </div>
             </div>
         </div>

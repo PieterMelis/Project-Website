@@ -15,8 +15,11 @@ Route::get('article/{id}', 'ArticlesController@show');
 Route::get('article/delete/{id}', 'ArticlesController@delete');
 Route::get('news', 'ArticlesController@News');
 Route::get('/', 'ArticlesController@Index');
+Route::get('yourarticles', 'ArticlesController@userarticles');
+Route::get('users', 'ArticlesController@users');
 Route::get('article/edit/{id}', 'ArticlesController@editView');
 Route::post('article/edit/{id}', 'ArticlesController@edit');
+
 
 Auth::routes();
 

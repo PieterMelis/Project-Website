@@ -35,6 +35,17 @@ class ArticlesController extends Controller
     {        
         return view('create');
     }
+    public function userarticles()
+    {        
+        $articles = Auth::user()->articles;
+        return view('userarticles', compact('articles'));
+    }
+    public function users()
+    {        
+        $users = User::all();
+
+        return view('users', compact('users'));
+    }
      public function delete($id){
         $article = Article::findOrFail($id);
         if(Auth::user()){
@@ -48,7 +59,9 @@ class ArticlesController extends Controller
 
     }
     public function edit($id, \App\Http\Requests\CreatePostRequest $request){
+        
         $article = Article::findOrFail($id);
+        if(Auth::user()){
         $updatedArticle = new Article($request->all());
         if( null !==$request->file('link1')){   
             $ext = $request->file('link1')->extension();
@@ -73,6 +86,7 @@ class ArticlesController extends Controller
 
 
         $article->update();
+        }
         $redirect = 'article/' . $article['id'];     
         return redirect($redirect);
 

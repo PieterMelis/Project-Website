@@ -12,7 +12,7 @@
     </div>
    <!-- Projects Row -->
    <div class="row">
-       <div class="col-md-6 portfolio-item">
+       <div class="portfolio-item">
            <a href="#">
                <img class="img-responsive" src="../../storage/app/{{ $article->link1}}" alt="">
            </a>
