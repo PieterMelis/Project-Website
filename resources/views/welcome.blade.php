@@ -275,7 +275,7 @@
      <div class="col-md-6 portfolio-item">
          <a href="article/{{ $approvedArticles[1]->id }}" >
             <div class="item">
-             <img class="img-responsive" src="img/700x400.jpg" alt="">
+             <img class="img-responsive" src="../storage/app/{{$approvedArticles[1]->link1}}" alt="">
             </div>
          </a>
          <h3>
