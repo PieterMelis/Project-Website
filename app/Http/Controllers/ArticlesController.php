@@ -35,6 +35,17 @@ class ArticlesController extends Controller
     {        
         return view('create');
     }
+    public function userarticles()
+    {        
+        $articles = Auth::user()->articles;
+        return view('userarticles', compact('articles'));
+    }
+    public function users()
+    {        
+        $users = User::all();
+
+        return view('users', compact('users'));
+    }
      public function delete($id){
         $article = Article::findOrFail($id);
         if(Auth::user()){
