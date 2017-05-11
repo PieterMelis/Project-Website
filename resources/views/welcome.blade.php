@@ -55,22 +55,22 @@
                               </form>
                           </li>
                           <div class="mNav mNavB">
-                            <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('/news') }}">Testimonials</a></li>
-                            <li><a href="{{ url('/map') }}">Studenten map</a></li>
-                            <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/info') }}">Extra info</a></li>
-                            <li><a href="{{ url('/news') }}">Chat</a></li>
+                            <li><a href="{{ url('news') }}">Nieuws</a></li>
+                            <li><a href="{{ url('news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('map') }}">Studenten map</a></li>
+                            <li><a href="{{ url('news') }}">Spel</a></li>
+                            <li><a href="{{ url('info') }}">Extra info</a></li>
+                            <li><a href="{{ url('news') }}">Chat</a></li>
                           </div>
 
                         @else
                           <div class="mNav mNavB text-center">
-                            <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('/news') }}">Testimonials</a></li>
-                            <li><a href="{{ url('/map') }}">Studenten map</a></li>
-                            <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/info') }}">Extra info</a></li>
-                            <li><a href="{{ url('/news') }}">Chat</a></li>
+                            <li><a href="{{ url('news') }}">Nieuws</a></li>
+                            <li><a href="{{ url('news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('map') }}">Studenten map</a></li>
+                            <li><a href="{{ url('news') }}">Spel</a></li>
+                            <li><a href="{{ url('info') }}">Extra info</a></li>
+                            <li><a href="{{ url('news') }}">Chat</a></li>
                           </div>
                           <li>
                             <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
@@ -111,27 +111,27 @@
 
                 <div class="row icons portfolio-item">
                   <div class="col-sm-2">
-                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Video's</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Kaart</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Spel</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Chat</h4>
 
                   </div>
@@ -160,27 +160,27 @@
 
                 <div class="row icons portfolio-item">
                   <div class="col-sm-2">
-                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Video's</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Kaart</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Spel</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Chat</h4>
 
                   </div>
@@ -211,27 +211,27 @@
 
                 <div class="row icons portfolio-item">
                   <div class="col-sm-2">
-                    <a href="/news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="video"><div class="icon"><i class="fa fa-video-camera fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Video's</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="map"><div class="icon"><i class="fa fa-map-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Kaart</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Spel</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="/chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Chat</h4>
 
                   </div>
@@ -256,55 +256,42 @@
   </div>
  <!-- Projects Row -->
  <div class="row">
-   @if (isset($approvedArticles[0]))
+  @for ($i = 0; $i <= 1; $i++)
+    
+
+   @if (isset($approvedArticles[$i]))
      <div class="col-md-6 portfolio-item">
 
-         <a href="article/{{ $approvedArticles[0]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
+         <a href="article/{{ $approvedArticles[$i]->id }}">
+             <img class="img-responsive" src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
          </a>
         <h3>
-           <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
+           <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
        </h3>
-         <p>{{ $approvedArticles[0]->excerpt}}</p>
+         <p>{{ $approvedArticles[$i]->excerpt}}</p>
 
      </div>
    @endif
-   @if (isset($approvedArticles[1]))
-     <div class="col-md-6 portfolio-item">
-         <a href="article/{{ $approvedArticles[1]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[1]->link1}}" alt="">
-         </a>
-         <h3>
-             <a href="article/{{ $approvedArticles[1]->id }}">{{ $approvedArticles[1]->title}}</a>
-         </h3>
-         <p>{{ $approvedArticles[1]->excerpt}}</p>
-     </div>
-    @endif
+   @endfor
  </div>
-
  <div class="row">
-  @if (isset($approvedArticles[2]))
+  @for ($i = 2; $i <= 3; $i++)
+    
+
+   @if (isset($approvedArticles[$i]))
      <div class="col-md-6 portfolio-item">
-         <a href="article/{{ $approvedArticles[2]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[2]->link1}}" alt="">
+
+         <a href="article/{{ $approvedArticles[$i]->id }}">
+             <img class="img-responsive" src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
          </a>
-         <h3>
-             <a href="article/{{ $approvedArticles[2]->id }}">{{ $approvedArticles[2]->title}}</a>
-         </h3>
-         <p>{{ $approvedArticles[2]->excerpt}}</p>
+        <h3>
+           <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+       </h3>
+         <p>{{ $approvedArticles[$i]->excerpt}}</p>
+
      </div>
-  @endif
-  @if (isset($approvedArticles[3]))
-     <div class="col-md-6 portfolio-item">
-         <a href="article/{{ $approvedArticles[3]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[3]->link1}}" alt="">
-         </a>
-         <h3>
-            <a href="article/{{ $approvedArticles[3]->id }}">{{ $approvedArticles[3]->title}}</a>
-         </h3>
-         <p>{{ $approvedArticles[3]->excerpt}}</p>
-     </div>
-  @endif
+   @endif
+   @endfor
  </div>
 
 </div>
