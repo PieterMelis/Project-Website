@@ -42,7 +42,9 @@ footer{
   color: white;
 }
 
-
+.item {
+    height: 100%; width: 100%; overflow: hidden;
+}
 
 @media only screen and (max-width: 1000px) {
 .icons{font-size: 0.5em}

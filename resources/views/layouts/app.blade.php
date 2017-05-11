@@ -54,37 +54,31 @@
                     <ul class="topNav">
                       <div class="col-xs-2">
                         <a href="../news">
-                            <i class="fa fa-newspaper-o " aria-hidden="true"></i>
-                            <h6 class="none-margin text-center">Nieuws</h6>
+                            <h6 class="none-margin text-center ">Nieuws</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
-                          <i class="fa fa-video-camera" aria-hidden="true"></i>
                           <h6 class="none-margin text-center">Video's</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../map">
-                          <i class="fa fa-map-o " aria-hidden="true"></i>
                           <h6 class="none-margin text-center">Kaart</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
-                          <i class="fa fa-gamepad " aria-hidden="true"></i>
                           <h6 class="none-margin text-center">Spel</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../info">
-                          <i class="fa fa-info" aria-hidden="true"></i>
                           <h6 class="none-margin text-center">Info</h6>
                         </a>
                       </div>
                       <div class="col-xs-2">
                         <a href="../news">
-                          <i class="fa fa-comments-o " aria-hidden="true"></i>
                           <h6 class="none-margin text-center">Chat</h6>
                         </a>
                       </div>

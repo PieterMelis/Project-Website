@@ -46,16 +46,18 @@ p{
 .mNav{display: none;}
 .mNavB a{margin: 0;}
 .topNav div{
-  margin-top: 8px;
+  margin-top: 17px;
   width: 3em;
   text-align: center;
 }
-.topNav i, .topNav h6 {
-    color: #9d9d9d;
-  }
-  .topNav{
-  margin: 0 auto;
-  font-size: 1.8em;
+.topNav h6 {
+  color: #9d9d9d;
+  font-size: 0.6em;
+ }
+
+.topNav{
+margin: 0 auto;
+font-size: 1.8em;
 }
 @media only screen and (max-width: 768px) {
 

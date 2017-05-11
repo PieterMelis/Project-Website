@@ -260,7 +260,9 @@
      <div class="col-md-6 portfolio-item">
 
          <a href="article/{{ $approvedArticles[0]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
+           <div class="item">
+            <img class="img-responsive" src="../storage/app/{{$approvedArticles[0]->link1}}" alt="">
+          </div>
          </a>
         <h3>
            <a href="article/{{ $approvedArticles[0]->id }}">{{ $approvedArticles[0]->title}}</a>
@@ -271,8 +273,10 @@
    @endif
    @if (isset($approvedArticles[1]))
      <div class="col-md-6 portfolio-item">
-         <a href="article/{{ $approvedArticles[1]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[1]->link1}}" alt="">
+         <a href="article/{{ $approvedArticles[1]->id }}" >
+            <div class="item">
+             <img class="img-responsive" src="img/700x400.jpg" alt="">
+            </div>
          </a>
          <h3>
              <a href="article/{{ $approvedArticles[1]->id }}">{{ $approvedArticles[1]->title}}</a>
