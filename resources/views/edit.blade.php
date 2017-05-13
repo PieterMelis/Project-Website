@@ -90,7 +90,7 @@
 
 
 	             <div class="breadcrumb">
-	                <a href="/">← Terug naar overzicht</a>
+	                <a href="../../yourarticles">← Terug naar overzicht</a>
 	            </div>
 							<ul class="nav nav-tabs">
 								@if(strtoupper($article->type) == 'TEXT')
@@ -138,7 +138,7 @@
 	                            <div class="form-group">
 
 	                                <button type="submit" class="btn btn-default">
-	                                    <i class="fa fa-plus"></i> Toeveoegen
+	                                    <i class="fa fa-plus"></i> Aanpassen
 	                                </button>
 
 	                            </div>
@@ -177,7 +177,7 @@
 	                            <div class="form-group">
 
 	                                <button type="submit" class="btn btn-default">
-	                                    <i class="fa fa-plus"></i> Toeveoegen
+	                                    <i class="fa fa-plus"></i> Aanpassen
 	                                </button>
 	                            </div>
 	                            {!! Form::close() !!}
@@ -216,7 +216,7 @@
 											<div class="form-group">
 
 													<button type="submit" class="btn btn-default">
-															<i class="fa fa-plus"></i> Toeveoegen
+															<i class="fa fa-plus"></i> Aanpassen
 													</button>
 											</div>
 											{!! Form::close() !!}

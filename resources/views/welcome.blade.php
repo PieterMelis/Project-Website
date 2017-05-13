@@ -257,6 +257,7 @@
  <!-- Projects Row -->
  <div class="row">
   @for ($i = 0; $i <= 1; $i++)
+
    @if (isset($approvedArticles[$i]))
 
      <div class="col-md-6 portfolio-item art">
@@ -274,12 +275,10 @@
      </div>
 
    @endif
- @endfor
-
+   @endfor
  </div>
  <div class="row">
   @for ($i = 2; $i <= 3; $i++)
-
 
    @if (isset($approvedArticles[$i]))
      <div class="col-md-6 portfolio-item art">
