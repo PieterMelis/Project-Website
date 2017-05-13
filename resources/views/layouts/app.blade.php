@@ -58,7 +58,7 @@
                         </a>
                       </div>
                       <div class="col-xs-2">
-                        <a href="../news">
+                        <a href="../video">
                           <h6 class="none-margin text-center">Video's</h6>
                         </a>
                       </div>
@@ -68,7 +68,7 @@
                         </a>
                       </div>
                       <div class="col-xs-2">
-                        <a href="../news">
+                        <a href="../spel">
                           <h6 class="none-margin text-center">Spel</h6>
                         </a>
                       </div>
@@ -90,7 +90,7 @@
                         @if (Auth::guest())
                           <div class="mNav mNavB text-center">
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('/video') }}">Testimonials</a></li>
                             <li><a href="{{ url('/map') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Extra info</a></li>
@@ -104,7 +104,7 @@
 
                                     <div class="mNav mNavB text-center">
                                       <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                                      <li><a href="{{ url('/news') }}">Testimonials</a></li>
+                                      <li><a href="{{ url('/video') }}">Testimonials</a></li>
                                       <li><a href="{{ url('/map') }}">Studenten map</a></li>
                                       <li><a href="{{ url('/news') }}">Spel</a></li>
                                       <li><a href="{{ url('/info') }}">Extra info</a></li>

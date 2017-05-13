@@ -16,6 +16,14 @@ body{
 p{
   font-family: Georgia;
 }
+.text{
+  background-color: lightgrey;
+  padding: 2em;
+}
+.text h3{
+  margin: 0;
+  padding-bottom: 1em;
+}
 .none-margin{
   margin: 0;
 }

@@ -11,118 +11,58 @@
               </div>
           </div>
          <!-- Projects Row -->
-        <div class="row">
-         @if (isset($latestArticles[0]))
-           <div class="col-md-6 portfolio-item">
-             <h3>
-                 <a href="article/{{ $latestArticles[0]->id }}">{{ $latestArticles[0]->title}}</a>
-             </h3>
-               <a href="article/{{ $latestArticles[0]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{$latestArticles[0]->link1}}" alt="">
-               </a>
+         <div class="row">
 
-               <p>{{ $latestArticles[0]->excerpt}}</p>
 
-           </div>
-         @endif
-         @if (isset($latestArticles[1]))
-           <div class="col-md-6 portfolio-item">
-             <h3>
-                 <a href="article/{{ $latestArticles[1]->id }}">{{ $latestArticles[1]->title}}</a>
-             </h3>
-               <a href="article/{{ $latestArticles[1]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $latestArticles[1]->link1}}" alt="">
-               </a>
 
-               <p>{{ $latestArticles[1]->excerpt}}</p>
-           </div>
-          @endif
-       </div>
 
-       <div class="row">
-        @if (isset($latestArticles[2]))
-           <div class="col-md-6 portfolio-item">
-             <h3>
-                 <a href="article/{{ $latestArticles[2]->id }}">{{ $latestArticles[2]->title}}</a>
-             </h3>
-               <a href="article/{{ $latestArticles[2]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $latestArticles[2]->link1}}" alt="">
-               </a>
+          @for ($i = 0; $i <= 1; $i++)
+           @if (isset($latestArticles[$i]))
 
-               <p>{{ $latestArticles[2]->excerpt}}</p>
-           </div>
-        @endif
-        @if (isset($latestArticles[3]))
-           <div class="col-md-6 portfolio-item">
-               <a href="article/{{ $latestArticles[3]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $latestArticles[3]->link1}}" alt="">
-               </a>
-               <h3>
-                  <a href="article/{{ $latestArticles[3]->id }}">{{ $latestArticles[3]->title}}</a>
-               </h3>
-               <p>{{ $latestArticles[3]->excerpt}}</p>
-           </div>
-        @endif
-       </div>
+             <div class="col-md-6 portfolio-item art">
 
-<br>
-      <div class="row">
-                    <div class="col-lg-12">
-                        <h1 class="page-header">Videos
-                        </h1>
-                    </div>
-        </div>
-        <div class="row">
-         @if (isset($videoArticles[0]))
-           <div class="col-md-6 portfolio-item">
-               <a href="article/{{ $videoArticles[0]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $videoArticles[0]->link1}}" alt="">
-               </a>
-               <h3>
-                   <a href="article/{{ $videoArticles[0]->id }}">{{ $videoArticles[0]->title}}</a>
-               </h3>
-               <p>{{ $videoArticles[0]->excerpt}}</p>
+                 <a href="article/{{ $latestArticles[$i]->id }}">
+                     <img class="img-responsive " src="../storage/app/{{$latestArticles[$i]->link1}}" alt="">
+                 </a>
+                 <div class="text">
+                   <h3>
+                      <a href="article/{{ $latestArticles[$i]->id }}">{{ $latestArticles[$i]->title}}</a>
+                  </h3>
+                    <p>{{ $latestArticles[$i]->excerpt}}</p>
+                    <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $latestArticles[$i]->id }}">  Lees meer</a>
+                 </div>
+             </div>
 
-           </div>
-         @endif
-         @if (isset($videoArticles[1]))
-           <div class="col-md-6 portfolio-item">
-               <a href="article/{{ $videoArticles[1]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $videoArticles[1]->link1}}" alt="">
-               </a>
-               <h3>
-                   <a href="article/{{ $videoArticles[1]->id }}">{{ $videoArticles[1]->title}}</a>
-               </h3>
-               <p>{{ $videoArticles[1]->excerpt}}</p>
-           </div>
-          @endif
-       </div>
+           @endif
+         @endfor
 
-       <div class="row">
-        @if (isset($videoArticles[2]))
-           <div class="col-md-6 portfolio-item">
-               <a href="article/{{ $videoArticles[2]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $videoArticles[2]->link1}}" alt="">
-               </a>
-               <h3>
-                   <a href="article/{{ $videoArticles[2]->id }}">{{ $videoArticles[2]->title}}</a>
-               </h3>
-               <p>{{ $videoArticles[2]->excerpt}}</p>
-           </div>
-        @endif
-        @if (isset($videoArticles[3]))
-           <div class="col-md-6 portfolio-item">
-               <a href="article/{{ $videoArticles[3]->id }}">
-                   <img class="img-responsive" src="../storage/app/{{ $videoArticles[3]->link1}}" alt="">
-               </a>
-               <h3>
-                  <a href="article/{{ $videoArticles[3]->id }}">{{ $videoArticles[3]->title}}</a>
-               </h3>
-               <p>{{ $videoArticles[3]->excerpt}}</p>
-           </div>
-        @endif
-       </div>
-       <br>
+         </div>
+         <div class="row">
+          @for ($i = 2; $i <= 3; $i++)
+
+
+           @if (isset($latestArticles[$i]))
+             <div class="col-md-6 portfolio-item art">
+
+                 <a href="article/{{ $latestArticles[$i]->id }}">
+                     <img class="img-responsive " src="../storage/app/{{$latestArticles[$i]->link1}}" alt="">
+                 </a>
+                 <div class="text">
+                   <h3>
+                      <a href="article/{{ $latestArticles[$i]->id }}">{{ $latestArticles[$i]->title}}</a>
+                  </h3>
+                    <p>{{ $latestArticles[$i]->excerpt}}</p>
+                    <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $latestArticles[$i]->id }}">  Lees meer</a>
+                 </div>
+             </div>
+
+           @endif
+           @endfor
+         </div>
+
+
+         <br>
+
        <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Nieuwsartikels

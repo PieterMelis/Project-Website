@@ -56,7 +56,7 @@
                           </li>
                           <div class="mNav mNavB">
                             <li><a href="{{ url('news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('video') }}">Testimonials</a></li>
                             <li><a href="{{ url('map') }}">Studenten map</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Extra info</a></li>
@@ -66,7 +66,7 @@
                         @else
                           <div class="mNav mNavB text-center">
                             <li><a href="{{ url('news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('news') }}">Testimonials</a></li>
+                            <li><a href="{{ url('video') }}">Testimonials</a></li>
                             <li><a href="{{ url('map') }}">Studenten map</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Extra info</a></li>
@@ -257,20 +257,22 @@
  <!-- Projects Row -->
  <div class="row">
   @for ($i = 0; $i <= 1; $i++)
-
-
    @if (isset($approvedArticles[$i]))
-     <div class="col-md-6 portfolio-item">
+
+     <div class="col-md-6 portfolio-item art">
 
          <a href="article/{{ $approvedArticles[$i]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
+             <img class="img-responsive " src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
          </a>
-        <h3>
-           <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
-       </h3>
-         <p>{{ $approvedArticles[$i]->excerpt}}</p>
-
+         <div class="text">
+           <h3>
+              <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+          </h3>
+            <p>{{ $approvedArticles[$i]->excerpt}}</p>
+            <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
+         </div>
      </div>
+
    @endif
  @endfor
 
@@ -280,17 +282,20 @@
 
 
    @if (isset($approvedArticles[$i]))
-     <div class="col-md-6 portfolio-item">
+     <div class="col-md-6 portfolio-item art">
 
          <a href="article/{{ $approvedArticles[$i]->id }}">
-             <img class="img-responsive" src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
+             <img class="img-responsive " src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
          </a>
-        <h3>
-           <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
-       </h3>
-         <p>{{ $approvedArticles[$i]->excerpt}}</p>
-
+         <div class="text">
+           <h3>
+              <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+          </h3>
+            <p>{{ $approvedArticles[$i]->excerpt}}</p>
+            <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
+         </div>
      </div>
+
    @endif
    @endfor
  </div>
