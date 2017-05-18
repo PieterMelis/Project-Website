@@ -283,7 +283,7 @@
    @if (isset($approvedArticles[$i]))
      <div class="col-md-6 portfolio-item art">
 
-         <a href="articleGate/{{ $approvedArticles[$i]->id }}">
+         <a rel="canonical" href="articleGate/{{ $approvedArticles[$i]->id }}">
              <img class="img-responsive " src="{{$approvedArticles[$i]->picture_url}}" alt="">
          </a>
          <div class="text">
@@ -291,7 +291,7 @@
               {{ $approvedArticles[$i]->title}}
           </h3>
             <p>{{ $approvedArticles[$i]->excerpt}}</p>
-            <i class="fa fa-plus" aria-hidden="true"></i><a href="articleGate/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
+            <i class="fa fa-plus" aria-hidden="true"></i><a rel="canonical" href="articleGate/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
          </div>
      </div>
 
