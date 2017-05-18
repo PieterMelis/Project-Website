@@ -24,8 +24,7 @@
        </div>
 
    </div>
-   @else
-   @if(strtoupper(Auth::user()->role) == 'APPROVER' || strtoupper(Auth::user()->role) == 'ADMIN')
+   @else(strtoupper(Auth::user()->role) == 'APPROVER' || strtoupper(Auth::user()->role) == 'ADMIN')
    <div class="row">
        <div class="portfolio-item">
            <a href="#">
@@ -59,7 +58,6 @@
 
                               </div>
         {!! Form::close() !!}
-   @endif
    @endif
    @endif
 

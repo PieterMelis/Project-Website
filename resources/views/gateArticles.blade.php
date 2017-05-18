@@ -2,6 +2,20 @@
 
 @section('content')
 <div class="container">
+   @if (Auth::guest())
+    <div class="row">
+       <div class="portfolio-item">
+           
+           <h3>
+               <h2 class="article-header">Log eerst in</h2>   
+              
+               
+           </h3>
+           
+       </div>
+
+   </div>
+   @else
     <div class="row">
         <div class="col-md-12">
             <div class="panel panel-default">
@@ -29,5 +43,7 @@
             </div>
         </div>
     </div>
+    @endif
 </div>
+
 @endsection
