@@ -114,7 +114,7 @@
 	                            </div>
 	                            <div class="form-group">
 	                                {!! Form::label('role', 'Role') !!}
-	                                {!! Form::text('role', $user->role, ['class' => 'form-control']) !!}
+	                                {!! Form::select('role', array( 'user' => 'user', 'admin' => 'admin', 'other'  => 'other'), strtolower($user->role)); !!}
 	                            </div>
 	                           
 	                            <div class="form-group">
