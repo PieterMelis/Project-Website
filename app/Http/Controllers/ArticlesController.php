@@ -184,17 +184,8 @@ class ArticlesController extends Controller
 
     public function news(){
     	 $articles = Article::latest('updated_at')->get();
-        $i = 0;
-        foreach ($articles as $article) {
-            if($article->approved)
-            {   
-                if($i<4)
-                {
-                    $latestArticles[$i] = $article;
-                    $i++;
-                }
-            }            
-        }     
+
+         
         
         $i = 0;
         foreach ($articles as $article) {
@@ -202,11 +193,10 @@ class ArticlesController extends Controller
             {   
                 if(strtoupper($article->type) == 'VIDEO')
                 {
-                    if($i<4)
-                    {
+                    
                         $videoArticles[$i] = $article;
                         $i++;
-                    }
+                    
 
                 }
             }            
@@ -217,11 +207,10 @@ class ArticlesController extends Controller
             {   
                 if(strtoupper($article->type) == 'TEXT')
                 {
-                    if($i<4)
-                    {
+                   
                         $textArticles[$i] = $article;
                         $i++;
-                    }
+                    
 
                 }
             }            
