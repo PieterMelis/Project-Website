@@ -78,7 +78,7 @@
               </div>
           </div>
          <!-- Projects Row -->
-         <div class="row x">
+         <div class="row ">
 
           @foreach ($textArticles as $article)
 
