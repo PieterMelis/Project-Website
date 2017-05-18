@@ -35,8 +35,18 @@ p{
 .createMap{
   margin-top: -25px;
 }
-
-
+.rights2 h5{
+  padding: 2em;
+  text-align: center;
+  margin: 0;
+  background-color: black;
+  color: white;
+  width: 100%;
+}
+.rights2 {
+  margin-top: 10em;
+  bottom: 0;
+}
 
 
 

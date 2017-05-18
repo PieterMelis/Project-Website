@@ -133,7 +133,9 @@
 
         @yield('content')
     </div>
-
+    <div class="rights2">
+      <h5>Copyright © 2017 Stamp. All rights reserved. </h5>
+    </div>
     <!-- Scripts -->
     <script src="{{ asset('js/app.js') }}"></script>
 </body>

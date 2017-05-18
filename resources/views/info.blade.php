@@ -3,18 +3,14 @@
 
 @section('content')
 
-        <div class="container">
-          <div class="row">
-              <div class="col-lg-12">
-                  <h1 class="page-header">Extra info
-                  </h1>
-              </div>
-          </div>
 
           <div class="container">
 
         <div class="row">
-
+          <div class="col-lg-12">
+              <h1 class="page-header">Studeren
+              </h1>
+          </div>
 
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
               <h3 class="text-center ">Wegwijs</h3>
@@ -39,6 +35,10 @@
                 <a class="thumbnail" target="blank" href="https://www.gate15.be/nl/content/buitenland">
                     <img class="img-responsive" src="{{ asset('img/buitenland.jpg') }}" alt="">
                 </a>
+            </div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Vrije tijd
+                </h1>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
               <h3 class="text-center ">Cultuur</h3>
@@ -76,6 +76,10 @@
                     <img class="img-responsive" src="{{ asset('img/student-media.jpg') }}" alt="">
                 </a>
             </div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Werken
+                </h1>
+            </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
               <h3 class="text-center ">Studentenjob</h3>
                 <a class="thumbnail" target="blank" href="https://www.gate15.be/nl/content/studentenjob">
@@ -99,6 +103,10 @@
                 <a class="thumbnail" target="blank" href="https://www.gate15.be/nl/content/ondernemen">
                     <img class="img-responsive" src="{{ asset('img/ondernemen.jpg') }}" alt="">
                 </a>
+            </div>
+            <div class="col-lg-12">
+                <h1 class="page-header">Wonen
+                </h1>
             </div>
             <div class="col-lg-3 col-md-4 col-xs-6 thumb">
               <h3 class="text-center ">Kot</h3>

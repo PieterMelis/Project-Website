@@ -233,7 +233,6 @@
                   <div class="col-sm-2">
                     <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Chat</h4>
-
                   </div>
 
                 </div>
@@ -267,7 +266,7 @@
          </a>
          <div class="text">
            <h3>
-              <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+              {{ $approvedArticles[$i]->title}}
           </h3>
             <p>{{ $approvedArticles[$i]->excerpt}}</p>
             <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
@@ -277,6 +276,7 @@
    @endif
    @endfor
  </div>
+ <br>
  <div class="row">
   @for ($i = 2; $i <= 3; $i++)
 
@@ -288,7 +288,7 @@
          </a>
          <div class="text">
            <h3>
-              <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+              {{ $approvedArticles[$i]->title}}
           </h3>
             <p>{{ $approvedArticles[$i]->excerpt}}</p>
             <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
@@ -306,9 +306,9 @@
   <div class="container">
     <div class="col-md-4 text-center">
       <h3>Contacteer de stad</h3>
-      <h6>Stedelijk contactcenter</h6>
-      <h6>tel. 03 22 11 333</h6>
-      <h6><a href="#">info@stad.antwerpen.be</a></h6>
+      <h5>Stedelijk contactcenter</h5>
+      <h5>tel. 03 22 11 333</h5>
+      <h5><a href="#">info@stad.antwerpen.be</a></h5>
     </div>
     <div class="col-xs-4 col-xs-offset-4 portfolio-item  text-center">
       <h3>Volg stad Antwerpen</h3>
@@ -318,7 +318,11 @@
       <div class="col-sm-3"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
     </div>
   </div>
+  <div class="rights">
+    <h5>Copyright © 2017 Stamp. All rights reserved. </h5>
+  </div>
 </footer>
+
 </div>
 
 

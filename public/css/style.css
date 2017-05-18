@@ -35,13 +35,24 @@ html, body {
 }
 footer{
   margin-top: 10em;
+  color: white;
   padding: 2em 0;
+  background-color: #0064B4;
 }
 .foos{
   background-color: #0064B4;
+}
+.foos a{
   color: white;
 }
-
+.foos a:hover{
+  color: lightgray;
+}
+.rights h5{
+  padding: 4em 0 0 0;
+  text-align: center;
+  margin: 0;
+}
 @media only screen and (max-width: 1000px) {
 .icons{font-size: 0.5em}
 
