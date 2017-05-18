@@ -8,12 +8,15 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                  <a href="article/add"><button type="button" class="btn btn-primary btn-block">Artikel toevoegen</button><h6></h6></a>
-                  <a href="yourarticles"><button type="button" class="btn btn-primary btn-block">Uw artikels</button><h6></h6></a>
+                  <a href="article/add"><button type="button" class="btn btn-primary btn-block">Artikel toevoegen</button></a>
+                  <br>
+                  <a href="yourarticles"><button type="button" class="btn btn-primary btn-block">Uw artikels</button></a>
+                  <br>
                   @if (strtoupper(Auth::user()->role) == 'ADMIN')
 
-                  <a href="users"><button type="button" class="btn btn-primary btn-block">Beheer gebruikers</button><h6></h6></a>
-                  <a href="gateArticles"><button type="button" class="btn btn-primary btn-block">Beheer GATE 15 artikels</button><h6></h6></a>
+                  <a href="users"><button type="button" class="btn btn-primary btn-block">Beheer gebruikers</button></a>
+                  <br>
+                  <a href="gateArticles"><button type="button" class="btn btn-primary btn-block">Beheer GATE 15 artikels</button></a>
                   @endif
                 </div>
             </div>

@@ -26,7 +26,7 @@
                  </a>
                  <div class="text">
                    <h3>
-                      {{ $latestArticles[$i]->title}}
+                      <a href="article/{{ $latestArticles[$i]->id }}">{{ $latestArticles[$i]->title}}</a>
                   </h3>
                     <p>{{ $latestArticles[$i]->excerpt}}</p>
                     <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $latestArticles[$i]->id }}">  Lees meer</a>
@@ -49,7 +49,7 @@
                  </a>
                  <div class="text">
                    <h3>
-                      {{ $latestArticles[$i]->title}}
+                      <a href="article/{{ $latestArticles[$i]->id }}">{{ $latestArticles[$i]->title}}</a>
                   </h3>
                     <p>{{ $latestArticles[$i]->excerpt}}</p>
                     <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $latestArticles[$i]->id }}">  Lees meer</a>
@@ -60,12 +60,7 @@
            @endfor
          </div>
 
-
-
-
        <br>
-
-
        <div class="row">
                     <div class="col-lg-12">
                         <h1 class="page-header">Nieuwsartikels

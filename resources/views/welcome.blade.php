@@ -289,6 +289,7 @@
          <div class="text">
            <h3>
               {{ $approvedArticles[$i]->title}}
+
           </h3>
             <p>{{ $approvedArticles[$i]->excerpt}}</p>
             <i class="fa fa-plus" aria-hidden="true"></i><a href="articleGate/{{ $approvedArticles[$i]->id }}">  Lees meer</a>

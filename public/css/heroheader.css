@@ -25,7 +25,7 @@ Image credits: unsplash.com
   height: 10px;
   opacity: 1;
 }
- 
+
 /********************************/
 /*          Hero Headers        */
 /********************************/
@@ -49,8 +49,11 @@ Image credits: unsplash.com
     font-weight: bold;
     margin: 0;
     padding: 0;
-}
 
+}
+.hero h3{
+   text-transform:  none;
+}
 .fade-carousel .carousel-inner .item .hero {
     opacity: 0;
     -webkit-transition: 1s all ease-in-out .1s;
@@ -87,7 +90,7 @@ Image credits: unsplash.com
 .btn.btn-hero,
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
-    color: white;
+    color: #4D4D4D;
     background-color: #DCC600;
     border-color: #DCC600;
     outline: none;
