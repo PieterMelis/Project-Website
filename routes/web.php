@@ -12,6 +12,15 @@
 */
 Route::get('article/add', 'ArticlesController@create');
 Route::get('article/{id}', 'ArticlesController@show');
+Route::get('articleGate/{id}', 'ArticlesController@showGate');
+Route::get('approve/{id}', 'ArticlesController@approveView');
+Route::post('approve/{id}', 'ArticlesController@approve');
+Route::post('unapprove/{id}', 'ArticlesController@unapprove');
+Route::get('gateArticles', 'ArticlesController@gateArticles');
+
+
+
+
 Route::get('article/delete/{id}', 'ArticlesController@delete');
 Route::get('news', 'ArticlesController@News');
 Route::get('/', 'ArticlesController@Index');
@@ -21,6 +30,7 @@ Route::get('user/{id}', 'ArticlesController@editUser');
 Route::post('user/{id}', 'ArticlesController@changeUser');
 Route::get('article/edit/{id}', 'ArticlesController@editView');
 Route::post('article/edit/{id}', 'ArticlesController@edit');
+
 
 
 Auth::routes();

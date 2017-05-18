@@ -12,6 +12,7 @@
                   <a href="yourarticles"><h6>Uw artikels</h6></a>
                   @if (strtoupper(Auth::user()->role) == 'ADMIN')
                   <a href="users"><h6>Beheer gebruikers</h6></a>
+                  <a href="gateArticles"><h6>Beheer GATE 15 artikels</h6></a>
                   @endif
                 </div>
             </div>

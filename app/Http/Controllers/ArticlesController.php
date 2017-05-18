@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 use App\Article;
 use App\User;
 use App\Comment;
+use App\gate15_article;
 use Request;
 use Auth;
 use Carbon\Carbon;
@@ -19,6 +20,17 @@ class ArticlesController extends Controller
         $i = 0;
         foreach ($articles as $article) {
             if($article->approved)
+            {   
+                if($i<2)
+                {
+                    $approvedArticles[$i] = $article;
+                    $i++;
+                }
+            }            
+        }    
+        $articles = gate15_article::latest('updated_at')->get();
+        foreach ($articles as $article) {
+            if($article->is_accepted)
             {   
                 if($i<4)
                 {
@@ -133,6 +145,34 @@ class ArticlesController extends Controller
     	$article = Article::findOrFail($id);
     	return view('show', compact('article'));
     }
+    public function showGate($id){
+        $article = gate15_article::findOrFail($id);
+        return view('showGate', compact('article'));
+    }
+    public function approveView($id){
+        $article = gate15_article::findOrFail($id);
+        return view('approve', compact('article'));
+    }
+    public function approve($id){
+        $article = gate15_article::findOrFail($id);
+        $article['is_accepted'] = 1;
+        $article->update();
+        return view('approve', compact('article'));
+       
+    }
+    public function unapprove($id){
+        $article = gate15_article::findOrFail($id);
+        $article['is_accepted'] = 0;
+        $article->update();
+        return view('approve', compact('article'));
+            }
+    public function gateArticles()
+    {        
+        $articles = gate15_article::all();
+        return view('gateArticles', compact('articles'));
+    }
+
+
 
 
 

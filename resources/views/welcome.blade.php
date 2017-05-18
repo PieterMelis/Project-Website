@@ -283,15 +283,15 @@
    @if (isset($approvedArticles[$i]))
      <div class="col-md-6 portfolio-item art">
 
-         <a href="article/{{ $approvedArticles[$i]->id }}">
-             <img class="img-responsive " src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
+         <a href="articleGate/{{ $approvedArticles[$i]->id }}">
+             <img class="img-responsive " src="{{$approvedArticles[$i]->picture_url}}" alt="">
          </a>
          <div class="text">
            <h3>
-              <a href="article/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
+              <a href="articleGate/{{ $approvedArticles[$i]->id }}">{{ $approvedArticles[$i]->title}}</a>
           </h3>
             <p>{{ $approvedArticles[$i]->excerpt}}</p>
-            <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
+            <i class="fa fa-plus" aria-hidden="true"></i><a href="articleGate/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
          </div>
      </div>
 
