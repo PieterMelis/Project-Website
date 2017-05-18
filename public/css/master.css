@@ -54,15 +54,15 @@ p{
 .x {
   /* Prevent vertical gaps */
   line-height: 0;
-
+  margin: 0;
   column-count:         2;
   column-gap:           0px;
 
 }
 .x .art {
+  float: none;
   /* Just in case there are inline attributes */
   width: 100% !important;
-  height: auto !important;
 
 }
 
