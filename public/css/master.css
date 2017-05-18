@@ -21,6 +21,9 @@ p{
   padding: 2em;
   margin-bottom: 2em;
 }
+.img-responsive{
+  width: 100%;
+}
 .text h3{
   margin: 0;
   padding-bottom: 1em;
@@ -48,7 +51,20 @@ p{
   margin-top: 45em;
   bottom: 0;
 }
+.x {
+  /* Prevent vertical gaps */
+  line-height: 0;
 
+  column-count:         2;
+  column-gap:           0px;
+
+}
+.x .art {
+  /* Just in case there are inline attributes */
+  width: 100% !important;
+  height: auto !important;
+
+}
 
 
 
@@ -95,5 +111,7 @@ font-size: 1.8em;
       color: white;
       text-decoration: none;
     }
-
+    .x{
+      column-count:         1;
+    }
 }
