@@ -8,6 +8,8 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
+                    <a href="user/{{ Auth::user()->id}}"><button type="button" class="btn btn-primary btn-block">Uw gegevens</button></a>
+                  <br>
                   @if (strtoupper(Auth::user()->role) == 'ADMIN')
                   <a href="article/add"><button type="button" class="btn btn-primary btn-block">Artikel toevoegen</button></a>
                   <br>

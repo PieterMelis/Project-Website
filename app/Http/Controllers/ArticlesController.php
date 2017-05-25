@@ -67,7 +67,7 @@ class ArticlesController extends Controller
     public function changeUser($id, \App\Http\Requests\CreatePostRequest $request){
         
         $user = User::findOrFail($id);
-        if(strtoupper(Auth::user()->role) == 'ADMIN'){
+        if(strtoupper(Auth::user()->role) == 'ADMIN' || Auth::user()->id == $id){
         $updatedUser = new User($request->all());
         
         $user['name'] = $updatedUser['name'];

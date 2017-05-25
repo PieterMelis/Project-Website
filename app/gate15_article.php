@@ -9,7 +9,6 @@ class gate15_article extends Model
      protected $fillable = [
     	'title',    	
     	'author',
-    	'body',
     	'article_url',
     	'picture_url',
     	'published_on',

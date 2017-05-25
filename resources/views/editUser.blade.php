@@ -3,7 +3,7 @@
 
 @section('content')
 	<div class="container">
-		@if (strtoupper(Auth::user()->role) != 'ADMIN')
+		@unless (strtoupper(Auth::user()->role) == 'ADMIN' || Auth::user()->id == $user->id)
 
 					<div class="row">
 							<div class="col-md-8 col-md-offset-2">
@@ -112,10 +112,7 @@
 	                                {!! Form::label('email', 'Email') !!}
 	                                {!! Form::text('email', $user->email, ['class' => 'form-control']) !!}
 	                            </div>
-	                            <div class="form-group">
-	                                {!! Form::label('role', 'Role') !!}
-	                                {!! Form::select('role', array( 'user' => 'user', 'admin' => 'admin', 'other'  => 'other'), strtolower($user->role)); !!}
-	                            </div>
+	                            
 	                           
 	                            <div class="form-group">
 
