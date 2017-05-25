@@ -16,8 +16,8 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #DCC600;
-    border-color: #DCC600;
+    background-color: rgba(129,0,31, 0.8);
+    border-color: rgba(129,0,31, 0.8);
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -90,9 +90,9 @@ Image credits: unsplash.com
 .btn.btn-hero,
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
-    color: #4D4D4D;
-    background-color: #DCC600;
-    border-color: #DCC600;
+    color: white;
+    background-color: rgba(129,0,31, 1);
+    border-color: rgba(129,0,31, 1);
     outline: none;
     margin: 20px auto;
 
@@ -110,11 +110,11 @@ Image credits: unsplash.com
   background-repeat: no-repeat;
 }
 .fade-carousel .slides .slide-1 {
-  background-image: url('../img/Antwerp.jpg');
+  background-image: url('../img/x3.jpg');
 }
 .fade-carousel .slides .slide-2 {
-  background-image: url('../img/Antwerp2.jpg');
+  background-image: url('../img/x0.jpg');
 }
 .fade-carousel .slides .slide-3 {
-  background-image: url('../img/Antwerp3.jpg');
+  background-image: url('../img/x2.jpg');
 }

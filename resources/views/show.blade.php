@@ -4,29 +4,17 @@
 @section('content')
 
   <div class="container">
-    <!-- Page Header -->
-    <div class="row">
-        <div class="col-lg-12">
-            
-        </div>
-    </div>
-   <!-- Projects Row -->
-   
    <div class="row">
-       <div class="portfolio-item">
+       <div  class="col-md-12 ">
            <a href="#">
-               <img class="img-responsive" src="../../storage/app/{{ $article->link1}}" alt="">
+               <img class="img-responsive" src="{{ url('img/Antwerp.jpg') }}" alt="">
            </a>
-           <h3>
-               <h2 class="article-header">{{ $article->title }}</h2>
+           <h3 class="article-header">
+               <h2 >{{ $article->title }}</h2>
            </h3>
-           <b>{{ $article->excerpt }}</b>
+           <h4>{{ $article->excerpt }}</h4>
            <p>{{ $article->body }}</p>
        </div>
-
    </div>
-
-
-
   </div>
 @endsection

@@ -12,22 +12,13 @@
 
 body{
   font-family: 'Antwerpen';
+  background-color: white;
 }
 p{
-  font-family: Georgia;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 1.2em;
 }
-.text{
-  background-color: #B7C9D3;
-  padding: 2em;
-  margin-bottom: 2em;
-}
-.img-responsive{
-  width: 100%;
-}
-.text h3{
-  margin: 0;
-  padding-bottom: 1em;
-}
+
 .none-margin{
   margin: 0;
 }
@@ -51,28 +42,55 @@ p{
   margin-top: 45em;
   bottom: 0;
 }
-.x {
-
-  column-count:         2;
-  column-gap:           0px;
-
+.text{
+  background-color: rgba(129,0,31, 0.8);
+  padding: 2em;
+  margin-bottom: 2em;
+  color: white;
 }
-.x .art {
+.img-responsive{
+  width: 100%;
+}
+
+
+.art img{
+  width: 100%;
+}
+.art h3{
+  background-color: rgba(255,255,255, 0.5);
+  padding: 1em;
+  color: black;
+  text-align: center;
+  margin: 0;
+  width: 100%;
+  left: 50% ;
+  margin-left: -50%;
+  position: absolute;
+}
+.art .more{
+  right: 2em;
+  bottom: 3em;
+  position: absolute;
+}
+.art .more a{
+  color: black;
+}
+.art .more a:hover{
+  color: grey;
+  text-decoration: none;
+}
+
+.masonry { /* Masonry container */
+    column-count: 2;
+    column-gap: 1em;
+}
+
+.art {
   float: none;
-  /* Just in case there are inline attributes */
-  width: 100% !important;
-  height: auto !important;
-
+    display: inline-block;
+    margin: 0 0 ;
+    width: 100%;
 }
-
-
-
-
-
-
-
-
-
 
 
 

@@ -247,58 +247,31 @@
 
 
 <div class="homeContent container">
-  <!-- Page Header -->
-  <div class="row">
-      <div class="col-lg-12">
-          <h1 class="page-header">Laatste nieuws</h1>
+
+
+
+<div class="masonry">
+  @foreach ($approvedArticles as $article)
+<div class="item">
+  <div class="col-md-6 art ">
+    <h3>
+       {{ $article->title}}
+   </h3>
+      <a href="article/{{ $article->id }}">
+          <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="">
+      </a>
+      <div class="text">
+         <p>{{ $article->excerpt}}</p>
+         <div class="more">
+           <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $article->id }}">  Lees meer</a>
+         </div>
       </div>
-  </div>
- <!-- Projects Row -->
- <div class="row">
-  @for ($i = 0; $i <= 1; $i++)
+    </div>
+</div>
+ @endforeach
+</div>
 
-   @if (isset($approvedArticles[$i]))
 
-     <div class="col-md-6 portfolio-item art">
-
-         <a href="article/{{ $approvedArticles[$i]->id }}">
-             <img class="img-responsive " src="../storage/app/{{$approvedArticles[$i]->link1}}" alt="">
-         </a>
-         <div class="text">
-           <h3>
-              {{ $approvedArticles[$i]->title}}
-          </h3>
-            <p>{{ $approvedArticles[$i]->excerpt}}</p>
-            <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
-         </div>
-     </div>
-
-   @endif
-   @endfor
- </div>
- <br>
- <div class="row">
-  @for ($i = 2; $i <= 3; $i++)
-
-   @if (isset($approvedArticles[$i]))
-     <div class="col-md-6 portfolio-item art">
-
-         <a rel="canonical" href="articleGate/{{ $approvedArticles[$i]->id }}">
-             <img class="img-responsive " src="{{$approvedArticles[$i]->picture_url}}" alt="">
-         </a>
-         <div class="text">
-           <h3>
-              {{ $approvedArticles[$i]->title}}
-
-          </h3>
-            <p>{{ $approvedArticles[$i]->excerpt}}</p>
-            <i class="fa fa-plus" aria-hidden="true"></i><a rel="canonical" href="articleGate/{{ $approvedArticles[$i]->id }}">  Lees meer</a>
-         </div>
-     </div>
-
-   @endif
-   @endfor
- </div>
 
 </div>
 
