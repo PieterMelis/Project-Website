@@ -43,7 +43,7 @@ p{
   bottom: 0;
 }
 .text{
-  background-color: rgba(129,0,31, 0.8);
+  background-color: #4F758B;
   padding: 2em;
   margin-bottom: 2em;
   color: white;
@@ -55,12 +55,21 @@ p{
 
 .art img{
   width: 100%;
+  -webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.art img:hover{
+  -webkit-filter: grayscale(100%) blur(0.5px);
+	filter: grayscale(100%) blur(0.5px);
 }
 .art h3{
   background-color: rgba(255,255,255, 0.5);
   padding: 1em;
-  color: black;
+  color: #AF6D04;
   text-align: center;
+  z-index: 5;
   margin: 0;
   width: 100%;
   left: 50% ;
@@ -71,12 +80,14 @@ p{
   right: 2em;
   bottom: 3em;
   position: absolute;
+  color: black;
+
 }
 .art .more a{
   color: black;
 }
-.art .more a:hover{
-  color: grey;
+.art .more:hover, .more a:hover{
+  color: white;
   text-decoration: none;
 }
 

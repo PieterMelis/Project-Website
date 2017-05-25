@@ -23,6 +23,7 @@ Route::get('gateArticles', 'ArticlesController@gateArticles');
 
 Route::get('article/delete/{id}', 'ArticlesController@delete');
 Route::get('news', 'ArticlesController@News');
+Route::get('video', 'ArticlesController@News');
 Route::get('/', 'ArticlesController@Index');
 Route::get('yourarticles', 'ArticlesController@userarticles');
 Route::get('users', 'ArticlesController@users');
@@ -44,4 +45,7 @@ Route::get('/info', function () {
 
 Route::get('/map', function () {
     return view('map') ;
+});
+Route::get('/game', function () {
+    return view('game') ;
 });
