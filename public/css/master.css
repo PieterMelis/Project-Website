@@ -16,9 +16,14 @@ body{
 }
 p{
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 1.2em;
+  font-size: 1.1em;
 }
-
+.page-header{
+  color: #CF0039;
+}
+.img-responsive{
+  display: inline-flex;
+}
 .none-margin{
   margin: 0;
 }
@@ -43,10 +48,11 @@ p{
   bottom: 0;
 }
 .text{
-  background-color: #4F758B;
+  background-color: #90ABBC;
   padding: 2em;
   margin-bottom: 2em;
   color: white;
+  position: relative;
 }
 .img-responsive{
   width: 100%;
@@ -65,26 +71,28 @@ p{
 	filter: grayscale(100%) blur(0.5px);
 }
 .art h3{
-  background-color: rgba(255,255,255, 0.5);
-  padding: 1em;
-  color: #AF6D04;
+  background-color: rgba(0,0,0, 0.5);
+  padding: .5em;
+  color: #CF0039;
+  font-size: 1.3em;
   text-align: center;
   z-index: 5;
-  margin: 0;
+  bottom: 100%;
   width: 100%;
   left: 50% ;
+  margin: 0;
   margin-left: -50%;
   position: absolute;
 }
 .art .more{
   right: 2em;
-  bottom: 3em;
+  bottom: 1em;
   position: absolute;
-  color: black;
+  color: #CF0039;
 
 }
 .art .more a{
-  color: black;
+  color: #CF0039;
 }
 .art .more:hover, .more a:hover{
   color: white;
@@ -92,10 +100,13 @@ p{
 }
 
 .masonry { /* Masonry container */
+    column-count: 3;
+    column-gap: 1em;
+}
+.masonry2 { /* Masonry container */
     column-count: 2;
     column-gap: 1em;
 }
-
 .art {
   float: none;
     display: inline-block;
@@ -113,11 +124,16 @@ p{
   width: 3em;
   text-align: center;
 }
-.topNav h6 {
+.topNav a{
   color: #9d9d9d;
+}
+.topNav h6 {
   font-size: 0.6em;
  }
-
+ .topNav a:hover{
+   color: #CF0039;
+   text-decoration: none;
+  }
 .topNav{
 margin: 0 auto;
 font-size: 1.8em;
@@ -141,5 +157,9 @@ font-size: 1.8em;
     }
     .x{
       column-count:         1;
+    }
+    .masonry, .masonry2 { /* Masonry container */
+        column-count: 1;
+        column-gap: 0;
     }
 }

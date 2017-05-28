@@ -16,8 +16,8 @@ Image credits: unsplash.com
 }
 .fade-carousel .carousel-indicators > li {
     margin: 0 2px;
-    background-color: #AF6D04;
-    border-color:#AF6D04;
+    background-color: #CF0039;
+    border-color:#CF0039;
     opacity: .7;
 }
 .fade-carousel .carousel-indicators > li.active {
@@ -91,8 +91,8 @@ Image credits: unsplash.com
 .btn.btn-hero:hover,
 .btn.btn-hero:focus {
     color: black;
-    background-color:#AF6D04;
-    border-color:#AF6D04;
+    background-color:#CF0039;
+    border-color:#CF0039;
     outline: none;
     margin: 20px auto;
 
