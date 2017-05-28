@@ -117,8 +117,7 @@
 	                                {!! Form::textArea('body', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type (to become obsolete)') !!}
-	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
+	                                {!! Form::hidden('type', 'text') !!}
 	                            </div>
 	                            <div class="form-group">
 	                                {!! Form::label('link1', 'Afbeelding 1') !!}
@@ -156,11 +155,10 @@
 	                                {!! Form::textArea('body', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type (to become obsolote)') !!}
-	                                {!! Form::text('type', null, ['class' => 'form-control']) !!}
+	                                {!! Form::hidden('type', 'testimonial') !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link1', 'Video 1') !!}
+	                                {!! Form::label('link1', 'Video') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            
@@ -192,8 +190,7 @@
 													{!! Form::textArea('body', null, ['class' => 'form-control']) !!}
 											</div>
 											<div class="form-group">
-													{!! Form::label('type', 'Type') !!}
-													{!! Form::text('type', null, ['class' => 'form-control']) !!}
+													{!! Form::hidden('type', 'video') !!}
 											</div>
 											<div class="form-group">
 													{!! Form::label('link1', 'Video 1') !!}

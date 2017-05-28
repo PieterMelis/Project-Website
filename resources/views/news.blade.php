@@ -18,7 +18,7 @@
        {{ $article->title}}
    </h3>
       <a href="article/{{ $article->id }}">
-          <img class="img-responsive " src="article/{{ $article->id }}" alt="{{ $article->title}}">
+          <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="{{ $article->title}}">
       </a>
       <div class="text">
          <p>{{ $article->excerpt}}</p>

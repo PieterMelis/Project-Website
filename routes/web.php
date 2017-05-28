@@ -23,7 +23,9 @@ Route::get('gateArticles', 'ArticlesController@gateArticles');
 
 Route::get('article/delete/{id}', 'ArticlesController@delete');
 Route::get('news', 'ArticlesController@News');
-Route::get('video', 'ArticlesController@News');
+Route::get('video', 'ArticlesController@Videos');
+Route::get('video/{id}', 'ArticlesController@showVideo');
+
 Route::get('/', 'ArticlesController@Index');
 Route::get('yourarticles', 'ArticlesController@userarticles');
 Route::get('users', 'ArticlesController@users');

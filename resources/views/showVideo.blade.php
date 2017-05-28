@@ -2,15 +2,15 @@
 @extends('layouts.app')
 
 @section('content')
-@if(strtoupper($article->type) == 'TEXT')
- 
- 
+@if(strtoupper($article->type) == 'VIDEO')
   <div class="container">
    <div class="row">
        <div  class="col-md-12 ">
-           
-               <img class="img-responsive" src="../../storage/app/{{$article->link1}}" alt="">
-           
+          <div class="media-body">
+           <video src="../../storage/app/{{ $article->link1 }}" controls></video>
+
+            
+        </div>
            <h3 class="article-header">
                <h2 >{{ $article->title }}</h2>
            </h3>
@@ -21,7 +21,9 @@
   </div>
   @else
   <div class="container">
-  <a href="{{ url('news') }}">Geen artikel gevonden, ga terug</a>
-  <div>
+
+  <a href="{{ url('video') }}">Geen artikel gevonden, ga terug</a>
+  </div>
   @endif
+
 @endsection

@@ -252,12 +252,14 @@
 
 <div class="masonry">
   @foreach ($approvedArticles as $article)
+  @if ($article->picture_url == "")
 <div class="item">
   <div class="col-md-6 art ">
     <h3>
        {{ $article->title}}
    </h3>
       <a href="article/{{ $article->id }}">
+
           <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="">
       </a>
       <div class="text">
@@ -268,6 +270,24 @@
       </div>
     </div>
 </div>
+  @else
+  <div class="item">
+  <div class="col-md-6 art ">
+    <h3>
+       {{ $article->title}}
+   </h3>
+      <a href="articleGate/{{ $article->id}}">
+          <img class="img-responsive " src="{{$article->picture_url}}" alt="">
+      </a>
+      <div class="text">
+         <p>{{ $article->published_on}} - {{ $article->author }}</p>
+         <div class="more">
+           <i class="fa fa-plus" aria-hidden="true"></i><a href="articleGate/{{ $article->id }}">  Lees meer</a>
+         </div>
+      </div>
+    </div>
+</div>
+  @endif
  @endforeach
 </div>
 

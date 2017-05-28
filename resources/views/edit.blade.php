@@ -123,10 +123,7 @@
 	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 	                            </div>
-	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type (to become obsolete)') !!}
-	                                {!! Form::text('type', $article->type, ['class' => 'form-control']) !!}
-	                            </div>
+	                            
 	                            <div class="form-group">
 	                                {!! Form::label('link1', 'Afbeelding 1') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
@@ -165,10 +162,7 @@
 	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 	                            </div>
-	                            <div class="form-group">
-	                                {!! Form::label('type', 'Type (to become obsolote)') !!}
-	                                {!! Form::text('type', $article->type, ['class' => 'form-control']) !!}
-	                            </div>
+	                           
 	                            <div class="form-group">
 	                                {!! Form::label('link1', 'Video 1') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
@@ -204,10 +198,7 @@
 													{!! Form::label('body', 'Inhoud') !!}
 													{!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 											</div>
-											<div class="form-group">
-													{!! Form::label('type', 'Type') !!}
-													{!! Form::text('type', $article->type, ['class' => 'form-control']) !!}
-											</div>
+											
 											<div class="form-group">
 													{!! Form::label('link1', 'Video 1') !!}
 													{!! Form::file('link1', null, ['class' => 'form-control']) !!}

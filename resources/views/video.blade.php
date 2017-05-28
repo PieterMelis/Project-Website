@@ -10,55 +10,32 @@
                   </h1>
               </div>
           </div>
-         <!-- Projects Row -->
-         <div class="row">
+         
 
-
-
-
-            @for ($i = 0; $i <= 1; $i++)
-             @if (isset($videoArticles[$i]))
-
-               <div class="col-md-6 portfolio-item art">
-
-                   <a href="article/{{ $videoArticles[$i]->id }}">
-                       <img class="img-responsive " src="../storage/app/{{$videoArticles[$i]->link1}}" alt="">
-                   </a>
-                   <div class="text">
-                     <h3>
-                        <a href="article/{{ $videoArticles[$i]->id }}">{{ $videoArticles[$i]->title}}</a>
-                    </h3>
-                      <p>{{ $videoArticles[$i]->excerpt}}</p>
-                      <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $videoArticles[$i]->id }}">  Lees meer</a>
+          <div class="masonry">
+            
+            @foreach ($videoArticles as $article)
+          <div class="item">
+            <div class="col-md-6 art ">
+              <h3>
+                 {{ $article->title}}
+             </h3>
+                <a href="video/{{ $article->id }}">
+                    <img class="img-responsive " src="{{ url('img/Antwerp.jpg') }}" alt="{{ $article->title}}">
+                </a>
+                <div class="text">
+                   <p>{{ $article->excerpt}}</p>
+                   <div class="more">
+                     <i class="fa fa-plus" aria-hidden="true"></i><a href="video/{{ $article->id }}">  Lees meer</a>
                    </div>
-               </div>
+                </div>
+              </div>
+          </div>
+           @endforeach
+            
+          </div>
 
-             @endif
-           @endfor
-
-           </div>
-           <div class="row">
-            @for ($i = 2; $i <= 3; $i++)
-
-
-             @if (isset($videoArticles[$i]))
-               <div class="col-md-6 portfolio-item art">
-
-                   <a href="article/{{ $videoArticles[$i]->id }}">
-                       <img class="img-responsive " src="../storage/app/{{$videoArticles[$i]->link1}}" alt="">
-                   </a>
-                   <div class="text">
-                     <h3>
-                        <a href="article/{{ $videoArticles[$i]->id }}">{{ $videoArticles[$i]->title}}</a>
-                    </h3>
-                      <p>{{ $videoArticles[$i]->excerpt}}</p>
-                      <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $videoArticles[$i]->id }}">  Lees meer</a>
-                   </div>
-               </div>
-
-             @endif
-             @endfor
-           </div>
+         
 
 
         

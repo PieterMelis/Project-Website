@@ -183,24 +183,8 @@ class ArticlesController extends Controller
 
 
     public function news(){
-    	 $articles = Article::latest('updated_at')->get();
-
-         
-        
-        $i = 0;
-        foreach ($articles as $article) {
-            if($article->approved)
-            {   
-                if(strtoupper($article->type) == 'VIDEO')
-                {
-                    
-                        $videoArticles[$i] = $article;
-                        $i++;
-                    
-
-                }
-            }            
-        }   
+         $articles = Article::latest('updated_at')->get();
+    	
         $i = 0;
         foreach ($articles as $article) {
             if($article->approved)
@@ -217,7 +201,34 @@ class ArticlesController extends Controller
         } 
 
           
-        return view('news', compact('latestArticles', 'videoArticles', 'textArticles'));
+        return view('news', compact('textArticles'));
+    }
+    public function videos(){
+         $articles = Article::latest('updated_at')->get();       
+        
+        $i = 0;
+        $videoArticles[0] = 1;
+        foreach ($articles as $article) {
+            if($article->approved)
+            {   
+                if(strtoupper($article->type) == 'VIDEO')
+                {
+                    
+                        $videoArticles[$i] = $article;
+                        $i++;
+                    
+
+                }
+            }            
+        } 
+        
+        return view('video', compact('videoArticles'));
+
+    }
+
+    public function showVideo($id){
+        $article = Article::findOrFail($id);
+        return view('showVideo', compact('article'));
     }
 
 }
