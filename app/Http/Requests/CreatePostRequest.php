@@ -27,8 +27,8 @@ class CreatePostRequest extends FormRequest
             'title' => 'required|max:255',
             'excerpt' => 'required|max:255',
             'body' => 'required',
-            'link1' => 'required|max:100000|mimes:jpg,png,bmp,avi,mpeg,quicktime,mp4,mov',
-            'link2' => 'max:100000|mimes:jpg,png,bmp,avi,mpeg,quicktime,mp4,mov',
+            'link1' => 'required|max:100000|mimes:jpeg,png,bmp,avi,mpeg,quicktime,mp4,mov',
+            'link2' => 'max:100000|mimes:jpeg,png,bmp,avi,mpeg,quicktime,mp4,mov',
 
         ];
     }
