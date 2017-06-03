@@ -82,7 +82,7 @@ class ArticlesController extends Controller
 
      public function delete($id){
         $article = Article::findOrFail($id);
-        if(Auth::user()){
+        if(strtoupper(Auth::user()->role) == 'ADMIN'){
             $article->delete();
         }
         return redirect('home');

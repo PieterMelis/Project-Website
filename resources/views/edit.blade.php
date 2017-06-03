@@ -137,6 +137,9 @@
 	                                <button type="submit" class="btn btn-default">
 	                                    <i class="fa fa-plus"></i> Aanpassen
 	                                </button>
+	                                <a href="{{ url('/article/delete/' . $article->id) }}" >
+												<div class="btn btn-default"><i class="fa fa-minus"></i> Verwijderen</button></a>
+											</div>
 
 	                            </div>
 	                            {!! Form::close() !!}
@@ -173,6 +176,9 @@
 	                                <button type="submit" class="btn btn-default">
 	                                    <i class="fa fa-plus"></i> Aanpassen
 	                                </button>
+	                                <a href="{{ url('/article/delete/' . $article->id) }}" >
+												<div class="btn btn-default"><i class="fa fa-minus"></i> Verwijderen</button></a>
+											</div>
 	                            </div>
 	                            {!! Form::close() !!}
 	                </div>
@@ -209,6 +215,8 @@
 													<button type="submit" class="btn btn-default">
 															<i class="fa fa-plus"></i> Aanpassen
 													</button>
+											<a href="{{ url('/article/delete/' . $article->id) }}" >
+												<div class="btn btn-default"><i class="fa fa-minus"></i> Verwijderen</button></a>
 											</div>
 											{!! Form::close() !!}
 					</div>
