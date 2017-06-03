@@ -130,11 +130,7 @@
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
-
-                  </div>
+                  
 
                 </div>
               </div>
@@ -179,11 +175,7 @@
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
-
-                  </div>
+                  
 
                 </div>
               </div>
@@ -230,10 +222,7 @@
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
-                  </div>
+                  
 
                 </div>
               </div>
