@@ -110,7 +110,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2 col-md-offset-1">
+                  <div class="col-sm-2 col-sm-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
@@ -155,7 +155,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2 col-md-offset-1">
+                  <div class="col-sm-2 col-sm-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
@@ -201,7 +201,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2 col-md-offset-1">
+                  <div class="col-sm-2 col-sm-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
