@@ -235,8 +235,25 @@ class ArticlesController extends Controller
                 }
             }            
         } 
+
         
-        return view('video', compact('videoArticles'));
+        $i = 0;
+        
+        foreach ($articles as $article) {
+            if($article->approved)
+            {   
+                if(strtoupper($article->type) == 'TESTIMONIAL')
+                {
+                    
+                        $testimonialArticles[$i] = $article;
+                        $i++;
+                    
+
+                }
+            }            
+        } 
+        
+        return view('video', compact('videoArticles', 'testimonialArticles'));
 
     }
 

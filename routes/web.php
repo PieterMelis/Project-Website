@@ -48,6 +48,6 @@ Route::get('/info', function () {
 Route::get('/map', function () {
     return view('map') ;
 });
-Route::get('/game', function () {
+Route::get('/spel', function () {
     return view('game') ;
 });

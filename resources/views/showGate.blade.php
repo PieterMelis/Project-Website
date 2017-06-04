@@ -23,6 +23,7 @@
            <b>{{ $article->published_on }}</b>
            <p>{!! $article->content !!}</p>
        </div>
+       <a href="{{$article->article_url}}" rel=canonical>Lees het originele artikel op Gate 15!</a>
 
    </div>
    @else

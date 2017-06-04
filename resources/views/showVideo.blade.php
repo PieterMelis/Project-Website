@@ -2,7 +2,7 @@
 @extends('layouts.app')
 
 @section('content')
-@if(strtoupper($article->type) == 'VIDEO')
+@if(strtoupper($article->type) == 'VIDEO' || strtoupper($article->type) == 'TESTIMONIAL')
   <div class="container">
    <div class="row">
        <div  class="col-md-12 ">
