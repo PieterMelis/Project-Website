@@ -118,3 +118,13 @@ Image credits: unsplash.com
 .fade-carousel .slides .slide-3 {
   background-image: url('../img/x2.jpg');
 }
+
+@media only screen and (max-width: 768px) {
+  .hero h1 {
+      font-size: 2em;
+  }
+  .hero h3{
+     font-size: 1em;
+  }
+
+}

@@ -40,10 +40,17 @@
                 @if (Route::has('login'))
                     <div class="nav navbar-nav navbar-right mNavAll">
                         @if (Auth::check())
+                          <div class="mNav mNavB">
+                            <li><a href="{{ url('news') }}">Nieuws</a></li>
+                            <li><a href="{{ url('video') }}">Video's</a></li>
+                            <li><a href="{{ url('map') }}">Kaart</a></li>
+                            <li><a href="{{ url('news') }}">Spel</a></li>
+                            <li><a href="{{ url('info') }}">Info</a></li>
+                          </div>
                           <li class="mNavB">
                             <a href="{{ url('/home') }}">Dashboard</a>
                           </li>
-                          <li class="text-center">
+                          <li class="text-center mNavB">
                               <a href="{{ route('logout') }}"
                                   onclick="event.preventDefault();
                                            document.getElementById('logout-form').submit();">
@@ -54,13 +61,7 @@
                                   {{ csrf_field() }}
                               </form>
                           </li>
-                          <div class="mNav mNavB">
-                            <li><a href="{{ url('news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('video') }}">Video's</a></li>
-                            <li><a href="{{ url('map') }}">Kaart</a></li>
-                            <li><a href="{{ url('news') }}">Spel</a></li>
-                            <li><a href="{{ url('info') }}">Info</a></li>
-                          </div>
+
 
                         @else
                           <div class="mNav mNavB text-center">
@@ -69,13 +70,14 @@
                             <li><a href="{{ url('map') }}">Kaart</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Info</a></li>
+                            <li>
+                              <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
+                            </li>
+                            <li>
+                              <a href="{{ url('/register') }}"><span class="fa fa-sign-in"></span> Register</a>
+                            </li>
                           </div>
-                          <li>
-                            <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
-                          </li>
-                          <li>
-                            <a href="{{ url('/register') }}"><span class="fa fa-sign-in"></span> Register</a>
-                          </li>
+
                         @endif
                     </div>
                 @endif
@@ -301,13 +303,13 @@
 <footer class="foos">
   <div class="container">
     <div class="col-md-4 text-center">
-      <h3>Contacteer de stad</h3>
+      <h3>Contacteer Antwerpen</h3>
       <h5>Stedelijk contactcenter</h5>
       <h5>tel. 03 22 11 333</h5>
       <h5><a href="#">info@stad.antwerpen.be</a></h5>
     </div>
     <div class="col-xs-4 col-xs-offset-4 portfolio-item  text-center">
-      <h3>Volg stad Antwerpen</h3>
+      <h3>Volg Antwerpen</h3>
       <div class="col-sm-3"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></div>
       <div class="col-sm-3"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></div>
       <div class="col-sm-3"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></div>
