@@ -17,7 +17,7 @@
   <div class="col-md-4 art ">
       <a href="article/{{ $article->id }}">
         <!--  <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="{{ $article->title}}"> -->
-        <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="{{ $article->title}}">
+        <img class="img-responsive " src="storage/{{$article->link1}}" alt="{{ $article->title}}">
 
 
       </a>

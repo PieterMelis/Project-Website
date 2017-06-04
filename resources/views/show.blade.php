@@ -9,7 +9,7 @@
    <div class="row">
        <div  class="col-md-12 ">
            
-               <img class="img-responsive" src="../../storage/app/{{$article->link1}}" alt="{{ $article->title }}">
+               <img class="img-responsive" src="../storage/{{$article->link1}}" alt="{{ $article->title }}">
            
            <h3 class="article-header">
                <h2 >{{ $article->title }}</h2>
@@ -17,7 +17,7 @@
            <h4>{{ $article->excerpt }}</h4>
            <p> {!! nl2br(e($article->body)) !!}</p>
        </div>
-       <img class="img-responsive" src="../../storage/app/{{$article->link2}}" alt="{{ $article->title }}">
+       <img class="img-responsive" src="../storage/{{$article->link2}}" alt="{{ $article->title }}">
 
    </div>
   </div>
