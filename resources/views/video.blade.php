@@ -19,7 +19,7 @@
               <div class="col-md-4 art ">
                   <a href="video/{{ $article->id }}">
                     <!--  <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="{{ $article->title}}"> -->
-                    <video src="../storage/app/{{ $article->link1 }}"></video>
+                    <video src="../storage/app/{{ $article->link1 }}" width="100%"></video>
 
 
                   </a>

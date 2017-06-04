@@ -50,7 +50,7 @@ class ArticlesController extends Controller
     }
     public function userarticles()
     {        
-        $articles = Auth::user()->articles;
+        $articles = Article::all();
         return view('userarticles', compact('articles'));
     }
     public function users()
@@ -100,13 +100,15 @@ class ArticlesController extends Controller
         $updatedArticle = new Article($request->all());
         if( null !==$request->file('link1')){   
             $ext = $request->file('link1')->extension();
-            $path = $request->file('link1')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
-            $updatedArticle->link1 = $path;    
+            $imageName = 'image' . str_random(10) . ".{$ext}";
+
+            $path = $request->file('link1')->storeAs('public/newsImages', $imageName);
+            $updatedArticle->link1 = 'newsImages/' . $imageName;    
             if( null !==$request->file('link2')){
                 $ext = $request->file('link2')->extension();
-
-                $path = $request->file('link2')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
-                $updatedArticle->link2 = $path; 
+                $imageName = 'image' . str_random(10) . ".{$ext}";
+                $path = $request->file('link2')->storeAs('public/newsImages', $imageName);
+                $updatedArticle->link2 = 'newsImages/' . $imageName; ; 
             } 
         }
         $article['title'] = $updatedArticle['title'];
@@ -131,13 +133,17 @@ class ArticlesController extends Controller
     public function store(\App\Http\Requests\CreatePostRequest $request){
          $article = new Article($request->all());   
          $ext = $request->file('link1')->extension();
-         $path = $request->file('link1')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
-         $article->link1 = $path;    
+         $imageName = 'image' . str_random(10) . ".{$ext}";
+           
+         $path = $request->file('link1')->storeAs('public/newsImages', $imageName);
+         $article->link1 = 'newsImages/' . $imageName;  
          if( null !==$request->file('link2')){
             $ext = $request->file('link2')->extension();
 
-            $path = $request->file('link2')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
-            $article->link2 = $path; 
+            $imageName = 'image' . str_random(10) . ".{$ext}";
+           
+         $path = $request->file('link2')->storeAs('public/newsImages', $imageName);
+         $article->link2 = 'newsImages/' . $imageName;  
          }
          Auth::user()->articles()->save($article);    
         return redirect('/');

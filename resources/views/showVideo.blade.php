@@ -7,7 +7,7 @@
    <div class="row">
        <div  class="col-md-12 ">
           <div class="media-body">
-           <video src="../storage/{{ $article->link1 }}" controls></video>
+           <video src="../storage/{{ $article->link1 }}" width="100%" controls></video>
 
             
         </div>
