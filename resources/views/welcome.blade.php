@@ -242,8 +242,12 @@
 
 <div class="item">
   <div class="col-md-6 art ">
+@if(strtoupper($article->type) == 'TESTIMONIAL')
+      <a href="video/{{ $article->id }}">
 
+@else
       <a href="article/{{ $article->id }}">
+        @endif
         @if(strtoupper($article->type) == 'TESTIMONIAL')
           <video src="storage/{{ $article->link1 }}"></video>
         @else
@@ -256,7 +260,13 @@
        </h3>
          <p>{{ $article->excerpt}}</p>
          <div class="more">
-           <i class="fa fa-plus" aria-hidden="true"></i><a href="article/{{ $article->id }}">  Lees meer</a>
+           <i class="fa fa-plus" aria-hidden="true"></i>
+           @if(strtoupper($article->type) == 'TESTIMONIAL')
+           <a href="video/{{ $article->id }}">  Lees meer</a>
+           
+           @else
+           <a href="article/{{ $article->id }}">  Lees meer</a>
+           @endif
          </div>
       </div>
     </div>

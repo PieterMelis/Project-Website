@@ -113,7 +113,11 @@
 	                                {!! Form::text('email', $user->email, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
+	                            	@if(strtoupper(Auth::user()->role) == 'ADMIN' )
+	                            	{!! Form::select('role', ['User' => 'User', 'Admin' => 'Admin']);!!}
+	                            	@else
 	                                {!! Form::hidden('role', $user->role) !!}
+	                                @endif
 	                            </div>
 	                            
 	                           
