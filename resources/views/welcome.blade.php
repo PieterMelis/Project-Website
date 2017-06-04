@@ -121,7 +121,7 @@
                     <h4>Kaart</h4>
                   </div>
                   <div class="col-sm-2">
-                    <a href="game"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
+                    <a href="spel"><div class="icon"><i class="fa fa-gamepad fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Spel</h4>
                   </div>
                   <div class="col-sm-2">
@@ -239,12 +239,16 @@
 <div class="masonry2">
   @foreach ($approvedArticles as $article)
   @if ($article->picture_url == "")
+
 <div class="item">
   <div class="col-md-6 art ">
 
       <a href="article/{{ $article->id }}">
-
+        @if(strtoupper($article->type) == 'TESTIMONIAL')
+          <video src="../storage/app/{{ $article->link1 }}"></video>
+        @else
           <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="">
+          @endif
       </a>
       <div class="text">
         <h3>

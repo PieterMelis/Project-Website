@@ -69,7 +69,7 @@
                         </a>
                       </div>
                       <div class="col-xs-2">
-                        <a href="{{ url('/game') }}">
+                        <a href="{{ url('/spel') }}">
                           <h6 class="none-margin text-center">Spel</h6>
                         </a>
                       </div>
