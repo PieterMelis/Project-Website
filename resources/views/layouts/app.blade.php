@@ -87,10 +87,10 @@
                         @if (Auth::guest())
                           <div class="mNav mNavB text-center">
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('/video') }}">Testimonials</a></li>
-                            <li><a href="{{ url('/map') }}">Studenten map</a></li>
+                            <li><a href="{{ url('/video') }}">Video's</a></li>
+                            <li><a href="{{ url('/map') }}">Kaart</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
-                            <li><a href="{{ url('/info') }}">Extra info</a></li>
+                            <li><a href="{{ url('/info') }}">Info</a></li>
 
                           </div>
                             <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
@@ -101,10 +101,10 @@
 
                                     <div class="mNav mNavB text-center">
                                       <li><a href="{{ url('/news') }}">Nieuws</a></li>
-                                      <li><a href="{{ url('/video') }}">Testimonials</a></li>
-                                      <li><a href="{{ url('/map') }}">Studenten map</a></li>
+                                      <li><a href="{{ url('/video') }}">Video's</a></li>
+                                      <li><a href="{{ url('/map') }}">Kaart</a></li>
                                       <li><a href="{{ url('/news') }}">Spel</a></li>
-                                      <li><a href="{{ url('/info') }}">Extra info</a></li>
+                                      <li><a href="{{ url('/info') }}">Info</a></li>
 
                                     </div>
                                     <li class="mNavB text-center">

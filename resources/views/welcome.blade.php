@@ -56,19 +56,19 @@
                           </li>
                           <div class="mNav mNavB">
                             <li><a href="{{ url('news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('video') }}">Testimonials</a></li>
-                            <li><a href="{{ url('map') }}">Studenten map</a></li>
+                            <li><a href="{{ url('video') }}">Video's</a></li>
+                            <li><a href="{{ url('map') }}">Kaart</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
-                            <li><a href="{{ url('info') }}">Extra info</a></li>
+                            <li><a href="{{ url('info') }}">Info</a></li>
                           </div>
 
                         @else
                           <div class="mNav mNavB text-center">
                             <li><a href="{{ url('news') }}">Nieuws</a></li>
-                            <li><a href="{{ url('video') }}">Testimonials</a></li>
-                            <li><a href="{{ url('map') }}">Studenten map</a></li>
+                            <li><a href="{{ url('video') }}">Video's</a></li>
+                            <li><a href="{{ url('map') }}">Kaart</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
-                            <li><a href="{{ url('info') }}">Extra info</a></li>
+                            <li><a href="{{ url('info') }}">Info</a></li>
                           </div>
                           <li>
                             <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
