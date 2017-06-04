@@ -220,6 +220,7 @@
                     <h4>Info</h4>
                   </div>
 
+
                 </div>
               </div>
             </div>

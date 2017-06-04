@@ -13,7 +13,7 @@
                   @if (strtoupper(Auth::user()->role) == 'ADMIN')
                   <a href="article/add"><button type="button" class="btn btn-primary btn-block">Artikel toevoegen</button></a>
                   <br>
-                  <a href="yourarticles"><button type="button" class="btn btn-primary btn-block">Uw artikels</button></a>
+                  <a href="yourarticles"><button type="button" class="btn btn-primary btn-block">Alle artikels</button></a>
                   <br>
 
 

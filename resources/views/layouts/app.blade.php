@@ -69,7 +69,7 @@
                         </a>
                       </div>
                       <div class="col-xs-2">
-                        <a href="{{ url('/spel') }}">
+                        <a href="{{ url('/game') }}">
                           <h6 class="none-margin text-center">Spel</h6>
                         </a>
                       </div>
@@ -91,6 +91,7 @@
                             <li><a href="{{ url('/map') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Extra info</a></li>
+
                           </div>
                             <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
                             <li class="text-center"><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
@@ -104,7 +105,7 @@
                                       <li><a href="{{ url('/map') }}">Studenten map</a></li>
                                       <li><a href="{{ url('/news') }}">Spel</a></li>
                                       <li><a href="{{ url('/info') }}">Extra info</a></li>
-                                      <li><a href="{{ url('/news') }}">Chat</a></li>
+
                                     </div>
                                     <li class="mNavB text-center">
                                       <a href="{{ url('/home') }}">Dashboard</a>

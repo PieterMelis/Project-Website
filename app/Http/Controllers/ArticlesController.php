@@ -19,7 +19,7 @@ class ArticlesController extends Controller
         $articles = Article::latest('updated_at')->get();
         $i = 0;
         foreach ($articles as $article) {
-            if($article->approved)
+            if($article->approved && strtoupper($article->type) != 'VIDEO' ) 
             {   
                 if($i<2)
                 {
@@ -82,7 +82,7 @@ class ArticlesController extends Controller
 
      public function delete($id){
         $article = Article::findOrFail($id);
-        if(Auth::user()){
+        if(strtoupper(Auth::user()->role) == 'ADMIN'){
             $article->delete();
         }
         return redirect('home');
@@ -199,15 +199,29 @@ class ArticlesController extends Controller
                 }
             }            
         } 
+         $articles = gate15_article::latest('updated_at')->get();       
+         $i = 0;         
+        foreach ($articles as $article) {
+               
+                if($article->is_accepted)
+                {
+                   
+                        $gateArticles[$i] = $article;
+                        $i++;
+                    
 
-          
-        return view('news', compact('textArticles'));
+                }
+                     
+        } 
+
+        
+        return view('news', compact('textArticles', 'gateArticles'));
     }
     public function videos(){
          $articles = Article::latest('updated_at')->get();       
         
         $i = 0;
-        $videoArticles[0] = 1;
+        
         foreach ($articles as $article) {
             if($article->approved)
             {   

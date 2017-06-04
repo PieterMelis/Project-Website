@@ -13,7 +13,7 @@
          
 
           <div class="masonry">
-            
+            @if(isset($videoArticles))
             @foreach ($videoArticles as $article)
           <div class="item">
             <div class="col-md-6 art ">
@@ -32,6 +32,7 @@
               </div>
           </div>
            @endforeach
+           @endif
             
           </div>
 
