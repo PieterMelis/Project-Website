@@ -60,7 +60,6 @@
                             <li><a href="{{ url('map') }}">Studenten map</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Extra info</a></li>
-                            <li><a href="{{ url('news') }}">Chat</a></li>
                           </div>
 
                         @else
@@ -70,7 +69,6 @@
                             <li><a href="{{ url('map') }}">Studenten map</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Extra info</a></li>
-                            <li><a href="{{ url('news') }}">Chat</a></li>
                           </div>
                           <li>
                             <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
@@ -110,7 +108,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2">
+                  <div class="col-sm-2 col-md-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
@@ -130,11 +128,7 @@
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
                   </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
 
-                  </div>
 
                 </div>
               </div>
@@ -159,7 +153,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2">
+                  <div class="col-sm-2 col-md-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
@@ -178,11 +172,6 @@
                   <div class="col-sm-2">
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
-
                   </div>
 
                 </div>
@@ -210,7 +199,7 @@
               <div class="col-xs-12">
 
                 <div class="row icons portfolio-item">
-                  <div class="col-sm-2">
+                  <div class="col-sm-2 col-md-offset-1">
                     <a href="news"><div class="icon"><i class="fa fa-newspaper-o fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Nieuws</h4>
                   </div>
@@ -229,10 +218,6 @@
                   <div class="col-sm-2">
                     <a href="info"><div class="icon"><i class="fa fa-info fa-4x" aria-hidden="true"></i></div></a>
                     <h4>Info</h4>
-                  </div>
-                  <div class="col-sm-2">
-                    <a href="chat"><div class="icon"><i class="fa fa-comments-o fa-4x" aria-hidden="true"></i></div></a>
-                    <h4>Chat</h4>
                   </div>
 
                 </div>

@@ -18,6 +18,7 @@
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <link href="{{ asset('css/master.css') }}" rel="stylesheet">
 
+
     <!-- Scripts -->
     <script>
         window.Laravel = {!! json_encode([
@@ -77,11 +78,7 @@
                           <h6 class="none-margin text-center">Info</h6>
                         </a>
                       </div>
-                      <div class="col-xs-2">
-                        <a href="{{ url('/news') }}">
-                          <h6 class="none-margin text-center">Chat</h6>
-                        </a>
-                      </div>
+
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -94,7 +91,6 @@
                             <li><a href="{{ url('/map') }}">Studenten map</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Extra info</a></li>
-                            <li><a href="{{ url('/news') }}">Chat</a></li>
                           </div>
                             <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
                             <li class="text-center"><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
