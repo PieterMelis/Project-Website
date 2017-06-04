@@ -148,7 +148,7 @@ font-size: 1.8em;
       z-index: 5;
     }
     .mNavB li, a{
-      
+
       color: #9d9d9d;
     }
     .mNavB a:hover{
@@ -162,4 +162,14 @@ font-size: 1.8em;
         column-count: 1;
         column-gap: 0;
     }
+    .text{
+      margin-bottom: 5em;
+    }
+    .mNavB a {
+    margin: 0;
+    width: 100%;
+    height: 3em;
+    display: block;
+    font-size: 1.5em;
+}
 }

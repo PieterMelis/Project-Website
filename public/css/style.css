@@ -58,7 +58,10 @@ footer{
   text-align: center;
   margin: 0;
 }
-@media only screen and (max-width: 1000px) {
-.icons{font-size: 0.5em}
+@media only screen and (max-width: 1000px) {.icons{font-size: 0.5em}}
+@media only screen and (max-width: 768px) {
 
+footer h3{
+  font-size: 2em;
+}
 }

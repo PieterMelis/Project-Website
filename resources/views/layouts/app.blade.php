@@ -91,10 +91,10 @@
                             <li><a href="{{ url('/map') }}">Kaart</a></li>
                             <li><a href="{{ url('/news') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Info</a></li>
-
-                          </div>
                             <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
                             <li class="text-center"><a href="{{ route('register') }}"><span class="fa fa-sign-in"></span> Register</a></li>
+                          </div>
+
 
                         @else
 
@@ -107,10 +107,10 @@
                                       <li><a href="{{ url('/info') }}">Info</a></li>
 
                                     </div>
-                                    <li class="mNavB text-center">
+                                    <li class="mNavB text-center ">
                                       <a href="{{ url('/home') }}">Dashboard</a>
                                     </li>
-                                    <li class="text-center">
+                                    <li class="text-center mNavB">
                                         <a href="{{ route('logout') }}"
                                             onclick="event.preventDefault();
                                                      document.getElementById('logout-form').submit();">
