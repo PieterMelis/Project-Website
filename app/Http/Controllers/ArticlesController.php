@@ -5,6 +5,7 @@ use App\Article;
 use App\User;
 use App\Comment;
 use App\gate15_article;
+
 use Request;
 use Auth;
 use Carbon\Carbon;
@@ -64,7 +65,7 @@ class ArticlesController extends Controller
 
         return view('editUser', compact('user'));
     }
-    public function changeUser($id, \App\Http\Requests\CreatePostRequest $request){
+    public function changeUser($id, \App\Http\Requests\uservalidation $request){
         
         $user = User::findOrFail($id);
         if(strtoupper(Auth::user()->role) == 'ADMIN' || Auth::user()->id == $id){
@@ -75,7 +76,7 @@ class ArticlesController extends Controller
         $user['role'] = $updatedUser['role'];
         $user->update();
         }
-        $redirect = 'users';     
+        $redirect = 'home';     
         return redirect($redirect);
 
     }
@@ -94,17 +95,17 @@ class ArticlesController extends Controller
     }
     public function edit($id, \App\Http\Requests\CreatePostRequest $request){
         
-        $article = Article::findOrFail($id);
+       $article = Article::findOrFail($id);
         if(Auth::user()){
         $updatedArticle = new Article($request->all());
         if( null !==$request->file('link1')){   
             $ext = $request->file('link1')->extension();
-            $path = $request->file('link1')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+            $path = $request->file('link1')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
             $updatedArticle->link1 = $path;    
             if( null !==$request->file('link2')){
                 $ext = $request->file('link2')->extension();
 
-                $path = $request->file('link2')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+                $path = $request->file('link2')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
                 $updatedArticle->link2 = $path; 
             } 
         }
@@ -113,7 +114,7 @@ class ArticlesController extends Controller
         $article['body'] = $updatedArticle['body'];
         $article['type'] = $updatedArticle['type'];
         if (null !== $updatedArticle['link1']){$article['link1'] = $updatedArticle['link1'];}
-        if (null !== $updatedArticle['link2']){$article['link2'] = $updatedArticle['link2'];}   
+        if (null !== $updatedArticle['link2']){$article['link2'] = $updatedArticle['link2'];}     
         
 
 
@@ -130,12 +131,12 @@ class ArticlesController extends Controller
     public function store(\App\Http\Requests\CreatePostRequest $request){
          $article = new Article($request->all());   
          $ext = $request->file('link1')->extension();
-         $path = $request->file('link1')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+         $path = $request->file('link1')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
          $article->link1 = $path;    
          if( null !==$request->file('link2')){
             $ext = $request->file('link2')->extension();
 
-            $path = $request->file('link2')->storeAs('newsImages', 'image' . str_random(10) . ".{$ext}");
+            $path = $request->file('link2')->storeAs('public/newsImages', 'image' . str_random(10) . ".{$ext}");
             $article->link2 = $path; 
          }
          Auth::user()->articles()->save($article);    

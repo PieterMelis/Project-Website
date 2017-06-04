@@ -245,9 +245,9 @@
 
       <a href="article/{{ $article->id }}">
         @if(strtoupper($article->type) == 'TESTIMONIAL')
-          <video src="../storage/app/{{ $article->link1 }}"></video>
+          <video src="storage/{{ $article->link1 }}"></video>
         @else
-          <img class="img-responsive " src="../storage/app/{{$article->link1}}" alt="">
+          <img class="img-responsive " src="storage/{{$article->link1}}" alt="">
           @endif
       </a>
       <div class="text">

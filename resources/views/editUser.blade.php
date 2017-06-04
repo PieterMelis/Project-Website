@@ -112,6 +112,9 @@
 	                                {!! Form::label('email', 'Email') !!}
 	                                {!! Form::text('email', $user->email, ['class' => 'form-control']) !!}
 	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::hidden('role', $user->role) !!}
+	                            </div>
 	                            
 	                           
 	                            <div class="form-group">
