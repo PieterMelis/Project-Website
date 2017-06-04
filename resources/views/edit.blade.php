@@ -123,7 +123,9 @@
 	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 	                            </div>
-	                            
+	                            <div class="form-group">
+	                                {!! Form::hidden('type', 'text') !!}
+	                            </div>
 	                            <div class="form-group">
 	                                {!! Form::label('link1', 'Afbeelding 1') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
@@ -165,6 +167,9 @@
 	                                {!! Form::label('body', 'Inhoud') !!}
 	                                {!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 	                            </div>
+	                            <div class="form-group">
+	                                {!! Form::hidden('type', 'testimonial') !!}
+	                            </div>
 	                           
 	                            <div class="form-group">
 	                                {!! Form::label('link1', 'Video 1') !!}
@@ -204,6 +209,9 @@
 													{!! Form::label('body', 'Inhoud') !!}
 													{!! Form::textArea('body', $article->body, ['class' => 'form-control']) !!}
 											</div>
+											<div class="form-group">
+	                                {!! Form::hidden('type', 'video') !!}
+	                            </div>
 											
 											<div class="form-group">
 													{!! Form::label('link1', 'Video 1') !!}
