@@ -70,14 +70,14 @@
                             <li><a href="{{ url('map') }}">Kaart</a></li>
                             <li><a href="{{ url('news') }}">Spel</a></li>
                             <li><a href="{{ url('info') }}">Info</a></li>
+
+                          </div>
                             <li>
                               <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
                             </li>
                             <li>
                               <a href="{{ url('/register') }}"><span class="fa fa-sign-in"></span> Register</a>
                             </li>
-                          </div>
-
                         @endif
                     </div>
                 @endif
@@ -265,7 +265,7 @@
            <i class="fa fa-plus" aria-hidden="true"></i>
            @if(strtoupper($article->type) == 'TESTIMONIAL')
            <a href="video/{{ $article->id }}">  Lees meer</a>
-           
+
            @else
            <a href="article/{{ $article->id }}">  Lees meer</a>
            @endif
