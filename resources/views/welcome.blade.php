@@ -310,10 +310,10 @@
     </div>
     <div class="col-xs-4 col-xs-offset-4 portfolio-item  text-center">
       <h3>Volg Antwerpen</h3>
-      <div class="col-sm-3"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></div>
-      <div class="col-sm-3"><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></div>
-      <div class="col-sm-3"><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></div>
-      <div class="col-sm-3"><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></div>
+      <div class="col-sm-3"><a href="https://www.facebook.com/stad.antwerpen" rel=canonical><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a></div>
+      <div class="col-sm-3"><a href="https://twitter.com/Stad_Antwerpen" rel=canonical><i class="fa fa-twitter-square fa-3x" aria-hidden="true"></i></a></div>
+      <div class="col-sm-3"><a href="https://www.instagram.com/stad_antwerpen/" rel=canonical><i class="fa fa-instagram fa-3x" aria-hidden="true"></i></a></div>
+      <div class="col-sm-3"><a href="https://www.linkedin.com/company/stad-antwerpen" rel=canonical><i class="fa fa-linkedin-square fa-3x" aria-hidden="true"></i></a></div>
     </div>
   </div>
   <div class="rights">
