@@ -56,12 +56,11 @@
                                 <button type="submit" class="btn btn-primary">
                                     Login
                                 </button>
-                                <br>
-                                <br>
-                                <br>
-                                <br>
 
-                                <a class="" href="{{ route('register') }}">Nog geen login? Register hier.</a><br><br>
+                                <button class="btn btn-secondary regi">
+                                    <a  href="{{ route('register') }}">Nog geen account? Registreer hier</a>
+                                </button>
+                                <br><br>
                                 <a class="" href="{{ route('password.request') }}">Wachtwoord vergeten?
                                 </a>
                             </div>

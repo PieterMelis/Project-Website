@@ -75,9 +75,7 @@
                             <li>
                               <a href="{{ url('/login') }}"><span class="	fa fa-user"></span> Login</a>
                             </li>
-                            <li>
-                              <a href="{{ url('/register') }}"><span class="fa fa-sign-in"></span> Register</a>
-                            </li>
+
                         @endif
                     </div>
                 @endif
@@ -87,7 +85,7 @@
   </nav>
 
   <!-- Indicators -->
-  <ol class="carousel-indicators">
+  <ol class="carousel-indicators balls">
     <li data-target="#bs-carousel" data-slide-to="0" class="active"></li>
     <li data-target="#bs-carousel" data-slide-to="1"></li>
     <li data-target="#bs-carousel" data-slide-to="2"></li>
