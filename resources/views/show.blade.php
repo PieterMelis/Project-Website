@@ -17,8 +17,9 @@
            <h4>{{ $article->excerpt }}</h4>
            <p> {!! nl2br(e($article->body)) !!}</p>
        </div>
+       @if($article->link2 != "")
        <img class="img-responsive" src="../storage/{{$article->link2}}" alt="{{ $article->title }}">
-
+       @endif
    </div>
   </div>
   @else
