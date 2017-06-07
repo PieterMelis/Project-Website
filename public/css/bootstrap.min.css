@@ -5063,8 +5063,8 @@ a.badge:hover {
 }
 .container .jumbotron,
 .container-fluid .jumbotron {
-    padding-right: 15px;
-    padding-left: 15px;
+    /*padding-right: 15px;
+    padding-left: 15px;*/
     border-radius: 6px
 }
 .jumbotron .container {
@@ -6541,7 +6541,7 @@ button.close {
     }
     .carousel-indicators {
         bottom: 20px
-        
+
     }
 }
 .btn-group-vertical>.btn-group:after,

@@ -1665,8 +1665,8 @@ pre code {
 .col-xs-12 {
     position: relative;
     min-height: 1px;
-    padding-left: 15px;
-    padding-right: 15px
+    padding-left: 5px;
+    padding-right: 5px
 }
 .col-xs-1,
 .col-xs-2,
@@ -3260,16 +3260,16 @@ fieldset[disabled] .btn-default:hover {
 .btn-primary.focus,
 .btn-primary:focus {
     color: #fff;
-    background-color: #2579a9;
-    border-color: #133d55
+    background-color: #CF0039;
+    border-color: #CF0039
 }
 .btn-primary.active,
 .btn-primary:active,
 .btn-primary:hover,
 .open>.btn-primary.dropdown-toggle {
     color: #fff;
-    background-color: #91465b;
-    border-color: #91465b;
+    background-color: #CF0039;
+    border-color: #CF0039;
 }
 
 .btn-primary.active.focus,
@@ -3282,8 +3282,8 @@ fieldset[disabled] .btn-default:hover {
 .open>.btn-primary.dropdown-toggle:focus,
 .open>.btn-primary.dropdown-toggle:hover {
     color: #fff;
-    background-color: #1f648b;
-    border-color: #133d55
+    background-color: #f06262;
+    border-color: #f06262
 }
 .btn-primary.active,
 .btn-primary:active,
@@ -3299,8 +3299,8 @@ fieldset[disabled] .btn-default:hover {
 fieldset[disabled] .btn-primary.focus,
 fieldset[disabled] .btn-primary:focus,
 fieldset[disabled] .btn-primary:hover {
-    background-color: #3097d1;
-    border-color: #2a88bd
+    background-color: #f06262;
+    border-color: #f06262
 }
 .btn-primary .badge {
     color: #3097d1;

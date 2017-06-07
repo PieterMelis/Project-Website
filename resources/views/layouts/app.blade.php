@@ -89,7 +89,7 @@
                             <li><a href="{{ url('/news') }}">Nieuws</a></li>
                             <li><a href="{{ url('/video') }}">Video's</a></li>
                             <li><a href="{{ url('/map') }}">Kaart</a></li>
-                            <li><a href="{{ url('/news') }}">Spel</a></li>
+                            <li><a href="{{ url('/spel') }}">Spel</a></li>
                             <li><a href="{{ url('/info') }}">Info</a></li>
 
                           </div>
@@ -102,7 +102,7 @@
                                       <li><a href="{{ url('/news') }}">Nieuws</a></li>
                                       <li><a href="{{ url('/video') }}">Video's</a></li>
                                       <li><a href="{{ url('/map') }}">Kaart</a></li>
-                                      <li><a href="{{ url('/news') }}">Spel</a></li>
+                                      <li><a href="{{ url('/spel') }}">Spel</a></li>
                                       <li><a href="{{ url('/info') }}">Info</a></li>
 
                                     </div>
