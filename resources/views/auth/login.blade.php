@@ -57,9 +57,9 @@
                                     Login
                                 </button>
 
-                                <button class="btn btn-secondary regi">
-                                    <a  href="{{ route('register') }}">Nog geen account? Registreer hier</a>
-                                </button>
+                                <a  href="{{ route('register') }}"><button class="btn btn-secondary regi">
+                                    Nog geen account? Registreer hier
+                                </button></a>
                                 <br><br>
                                 <a class="" href="{{ route('password.request') }}">Wachtwoord vergeten?
                                 </a>
