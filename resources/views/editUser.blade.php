@@ -108,7 +108,7 @@
 	                        {!! Form::open(array('files'=> true)) !!}
 
 	                            <div class="form-group">
-	                                {!! Form::label('name', 'Naam (max. 255 characters')  !!}
+	                                {!! Form::label('name', 'Naam')  !!}
 	                                {!! Form::text('name', $user->name, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">

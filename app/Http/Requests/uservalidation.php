@@ -30,4 +30,15 @@ class uservalidation extends FormRequest
 
         ];
     }
+    public function messages(){
+         return [
+        'name.required' => 'Het naam veld mag niet leeg zijn!',
+        'name.max'      => 'Het naam veld mag niet meer dan 50 tekens bevatten!',
+        'email.required' => 'Het email veld mag niet leeg zijn!',
+        'email.max' => 'Het email veld mag niet meer dan 50 tekens bevatten!',
+        'email.email' => 'Het email veld moet een geldig email adress bevatten!',
+        
+    ];
+
+    }
 }

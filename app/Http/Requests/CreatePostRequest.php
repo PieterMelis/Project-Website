@@ -39,10 +39,10 @@ class CreatePostRequest extends FormRequest
         'excerpt.required' => 'De samenvatting mag niet leeg zijn!',
         'excerpt.max' => 'De samenvatting mag niet langer zijn dan 190 tekens!',
         'link1.required' => 'Het eerste bestand mag niet leeg zijn!',
-        'link1.max' => 'Het eerste bestand mag niet groter zijn dan 100MB!'
-        'link1.mimes' => 'Het eerste bestand is niet het juiste formaat!'
-        'link2.max' => 'Het tweede bestand mag niet groter zijn dan 100MB!'
-        'link2.mimes' => 'Het tweede bestand is niet het juiste formaat!'
+        'link1.max' => 'Het eerste bestand mag niet groter zijn dan 100MB!',
+        'link1.mimes' => 'Het eerste bestand is niet het juiste formaat!',
+        'link2.max' => 'Het tweede bestand mag niet groter zijn dan 100MB!',
+        'link2.mimes' => 'Het tweede bestand is niet het juiste formaat!',
         'body.required'  => 'De inhoud mag niet leeg zijn!',
     ];
 
