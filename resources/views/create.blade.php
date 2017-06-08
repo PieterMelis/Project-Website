@@ -78,7 +78,7 @@
 	            <!-- Display Validation Errors -->
 	            @if ($errors->any())
 	            <div class="alert alert-danger">
-	                <strong>Whoops! Something went wrong!</strong>
+	                <strong>Oops! Er ging iets mis!</strong>
 	                <br><br>
 	                <ul>
 
