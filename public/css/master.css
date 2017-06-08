@@ -190,6 +190,10 @@ p{
 margin: 0 auto;
 font-size: 1.8em;
 }
+.regi{
+  color: black;
+}
+
 @media only screen and (max-width: 1000px) {
   .banner h1{
     font-size: 3em;

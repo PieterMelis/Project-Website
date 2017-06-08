@@ -93,7 +93,7 @@
                             <li><a href="{{ url('/info') }}">Info</a></li>
 
                           </div>
-                          <li class="text-center"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
+                          <li class="text-center mNavB"><a href="{{ route('login') }}"><span class="	fa fa-user"></span> Login</a></li>
 
                         @else
 
