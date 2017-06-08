@@ -239,7 +239,7 @@ font-size: 1.8em;
     font-size: 1.5em;
     margin-top: 0%;
   }
-  .balls{display: block;}
+  
 
 }
 @media only screen and (max-width: 550px) {.thumb h3{font-size: 1em;}}
