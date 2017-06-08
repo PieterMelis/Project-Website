@@ -123,11 +123,11 @@
 	                                {!! Form::hidden('type', 'text') !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link1', 'Afbeelding 1') !!}
+	                                {!! Form::label('link1', 'Hoofd afbeelding') !!}
 	                                {!! Form::file('link1', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
-	                                {!! Form::label('link2', 'Afbeelding 2') !!}
+	                                {!! Form::label('link2', 'Sub-Afbeelding') !!}
 	                                {!! Form::file('link2', null, ['class' => 'form-control']) !!}
 	                            </div>
 	                            <div class="form-group">
@@ -196,7 +196,7 @@
 													{!! Form::hidden('type', 'video') !!}
 											</div>
 											<div class="form-group">
-													{!! Form::label('link1', 'Video 1') !!}
+													{!! Form::label('link1', 'Video') !!}
 													{!! Form::file('link1', null, ['class' => 'form-control']) !!}
 											</div>
 
