@@ -24,10 +24,21 @@ class CreatePostRequest extends FormRequest
     public function rules()
     {
         return [
-            'name' => 'required|max:255',
-            'email' => 'required|max:190|email',
+            'name' => 'required|max:50',
+            'email' => 'required|max:50|email',
             
 
         ];
+    }
+    public function messages(){
+         return [
+        'name.required' => 'De naam mag niet leeg zijn!',
+        'name.max'      => 'De naam mag niet langer zijn dan 50 tekens!',
+        'email.required' => 'De email mag niet leeg zijn!',
+        'email.max' => 'De email mag niet langer zijn dan 50 tekens!',
+        'email.email' => 'De email moet een geldig email adress zijn!',
+        
+    ];
+
     }
 }
