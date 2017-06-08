@@ -28,7 +28,6 @@
                 @else
                 <div class="panel-body">
                   <p>U heeft geen rechten hier</p>
-                  <a href="home">Ga terug</a>
                 </div>
 
                 @endif
