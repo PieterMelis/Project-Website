@@ -5,19 +5,22 @@
    @if (Auth::guest())
     <div class="row">
        <div class="portfolio-item">
-           
+
            <h3>
-               <h2 class="article-header">Log eerst in</h2>   
-              
-               
+               <h2 class="article-header">Log eerst in</h2>
+
+
            </h3>
-           
+
        </div>
 
    </div>
    @else
     <div class="row">
         <div class="col-md-12">
+          <div class="breadcrumb">
+             <a href="{{ url('/home') }}">← Terug naar overzicht</a>
+          </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Lijst van GATE 15 artikels</div>
                 @if (strtoupper(Auth::user()->role) == 'ADMIN')
@@ -25,10 +28,9 @@
                   @foreach ($articles as $article)
                   <div>
                     <a href="approve/{{$article->id}}"><p class>{{$article->title}}</p></a>
-                    
+
                   </div>
                   @endforeach
-                  <a href="home">Ga terug</a>
                 </div>
 
 
@@ -38,7 +40,7 @@
                   <p>U heeft geen rechten hier</p>
                   <a href="home">Ga terug</a>
                 </div>
-                
+
                 @endif
             </div>
         </div>

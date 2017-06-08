@@ -4,6 +4,9 @@
 <div class="container">
     <div class="row">
         <div class="col-md-12">
+          <div class="breadcrumb">
+             <a href="{{ url('/home') }}">← Terug naar overzicht</a>
+          </div>
             <div class="panel panel-default">
                 <div class="panel-heading">Beheer gebruikers</div>
                 @if (strtoupper(Auth::user()->role) == 'ADMIN')
@@ -18,7 +21,6 @@
                   </div>
 
                   @endforeach
-                  <a href="home">Ga terug</a>
                 </div>
 
 

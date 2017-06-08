@@ -35,7 +35,7 @@ html, body {
 }
 .icon{color: white;}
 .icons i:hover{
-  color: #CF0039;
+
 }
 
 footer{
@@ -58,10 +58,24 @@ footer{
   text-align: center;
   margin: 0;
 }
-@media only screen and (max-width: 1000px) {.icons{font-size: 0.8em}}
-@media only screen and (max-width: 768px) {
-
-footer h3{
-  font-size: 2em;
+.hero h4{
+  transition:all 0.5s ease-in-out;
 }
+.hero .result_hover h4{
+  color: #CF0039;
+}
+.hero .result_hover i{
+  color: #CF0039;
+
+}
+
+
+
+@media only screen and (max-width: 1000px) {
+  .icons{font-size: 0.8em}
+}
+@media only screen and (max-width: 768px) {
+  footer h3{
+    font-size: 2em;
+  }
 }
